@@ -1,0 +1,3103 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20202.20.1110.1614                               -->
+<workbook source-build='2020.2.8 (20202.20.1110.1614)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='matches' inline='true' name='federated.013eysw09bdiv317r5eh50ypnwv8' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='matches' name='textscan.0izpq3y0xgz6q91d00ffn1xdaee8'>
+            <connection class='textscan' directory='C:/Users/DELL/Python for data science class/Sparks Foundation Intern Tasks/Tasks-5-Exploratory Data Analysis on Sports dataset' filename='matches.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0izpq3y0xgz6q91d00ffn1xdaee8' name='deliveries.csv' table='[deliveries#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='match_id' ordinal='0' />
+            <column datatype='integer' name='inning' ordinal='1' />
+            <column datatype='string' name='batting_team' ordinal='2' />
+            <column datatype='string' name='bowling_team' ordinal='3' />
+            <column datatype='integer' name='over' ordinal='4' />
+            <column datatype='integer' name='ball' ordinal='5' />
+            <column datatype='string' name='batsman' ordinal='6' />
+            <column datatype='string' name='non_striker' ordinal='7' />
+            <column datatype='string' name='bowler' ordinal='8' />
+            <column datatype='integer' name='is_super_over' ordinal='9' />
+            <column datatype='integer' name='wide_runs' ordinal='10' />
+            <column datatype='integer' name='bye_runs' ordinal='11' />
+            <column datatype='integer' name='legbye_runs' ordinal='12' />
+            <column datatype='integer' name='noball_runs' ordinal='13' />
+            <column datatype='integer' name='penalty_runs' ordinal='14' />
+            <column datatype='integer' name='batsman_runs' ordinal='15' />
+            <column datatype='integer' name='extra_runs' ordinal='16' />
+            <column datatype='integer' name='total_runs' ordinal='17' />
+            <column datatype='string' name='player_dismissed' ordinal='18' />
+            <column datatype='string' name='dismissal_kind' ordinal='19' />
+            <column datatype='string' name='fielder' ordinal='20' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='textscan.0izpq3y0xgz6q91d00ffn1xdaee8' name='matches.csv' table='[matches#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='id' ordinal='0' />
+              <column datatype='integer' name='season' ordinal='1' />
+              <column datatype='string' name='city' ordinal='2' />
+              <column datatype='date' name='date' ordinal='3' />
+              <column datatype='string' name='team1' ordinal='4' />
+              <column datatype='string' name='team2' ordinal='5' />
+              <column datatype='string' name='toss_winner' ordinal='6' />
+              <column datatype='string' name='toss_decision' ordinal='7' />
+              <column datatype='string' name='result' ordinal='8' />
+              <column datatype='integer' name='dl_applied' ordinal='9' />
+              <column datatype='string' name='winner' ordinal='10' />
+              <column datatype='integer' name='win_by_runs' ordinal='11' />
+              <column datatype='integer' name='win_by_wickets' ordinal='12' />
+              <column datatype='string' name='player_of_match' ordinal='13' />
+              <column datatype='string' name='venue' ordinal='14' />
+              <column datatype='string' name='umpire1' ordinal='15' />
+              <column datatype='string' name='umpire2' ordinal='16' />
+              <column datatype='string' name='umpire3' ordinal='17' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0izpq3y0xgz6q91d00ffn1xdaee8' name='deliveries.csv' table='[deliveries#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='match_id' ordinal='0' />
+              <column datatype='integer' name='inning' ordinal='1' />
+              <column datatype='string' name='batting_team' ordinal='2' />
+              <column datatype='string' name='bowling_team' ordinal='3' />
+              <column datatype='integer' name='over' ordinal='4' />
+              <column datatype='integer' name='ball' ordinal='5' />
+              <column datatype='string' name='batsman' ordinal='6' />
+              <column datatype='string' name='non_striker' ordinal='7' />
+              <column datatype='string' name='bowler' ordinal='8' />
+              <column datatype='integer' name='is_super_over' ordinal='9' />
+              <column datatype='integer' name='wide_runs' ordinal='10' />
+              <column datatype='integer' name='bye_runs' ordinal='11' />
+              <column datatype='integer' name='legbye_runs' ordinal='12' />
+              <column datatype='integer' name='noball_runs' ordinal='13' />
+              <column datatype='integer' name='penalty_runs' ordinal='14' />
+              <column datatype='integer' name='batsman_runs' ordinal='15' />
+              <column datatype='integer' name='extra_runs' ordinal='16' />
+              <column datatype='integer' name='total_runs' ordinal='17' />
+              <column datatype='string' name='player_dismissed' ordinal='18' />
+              <column datatype='string' name='dismissal_kind' ordinal='19' />
+              <column datatype='string' name='fielder' ordinal='20' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[matches.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[matches.csv]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches.csv_6F4EE19418D64E9D99FA7BE0CE18D7AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>season</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[season]</local-name>
+            <parent-name>[matches.csv]</parent-name>
+            <remote-alias>season</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches.csv_6F4EE19418D64E9D99FA7BE0CE18D7AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>city</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[city]</local-name>
+            <parent-name>[matches.csv]</parent-name>
+            <remote-alias>city</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches.csv_6F4EE19418D64E9D99FA7BE0CE18D7AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[matches.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches.csv_6F4EE19418D64E9D99FA7BE0CE18D7AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>team1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[team1]</local-name>
+            <parent-name>[matches.csv]</parent-name>
+            <remote-alias>team1</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches.csv_6F4EE19418D64E9D99FA7BE0CE18D7AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>team2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[team2]</local-name>
+            <parent-name>[matches.csv]</parent-name>
+            <remote-alias>team2</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches.csv_6F4EE19418D64E9D99FA7BE0CE18D7AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>toss_winner</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[toss_winner]</local-name>
+            <parent-name>[matches.csv]</parent-name>
+            <remote-alias>toss_winner</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches.csv_6F4EE19418D64E9D99FA7BE0CE18D7AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>toss_decision</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[toss_decision]</local-name>
+            <parent-name>[matches.csv]</parent-name>
+            <remote-alias>toss_decision</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches.csv_6F4EE19418D64E9D99FA7BE0CE18D7AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>result</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[result]</local-name>
+            <parent-name>[matches.csv]</parent-name>
+            <remote-alias>result</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches.csv_6F4EE19418D64E9D99FA7BE0CE18D7AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dl_applied</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[dl_applied]</local-name>
+            <parent-name>[matches.csv]</parent-name>
+            <remote-alias>dl_applied</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches.csv_6F4EE19418D64E9D99FA7BE0CE18D7AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>winner</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[winner]</local-name>
+            <parent-name>[matches.csv]</parent-name>
+            <remote-alias>winner</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches.csv_6F4EE19418D64E9D99FA7BE0CE18D7AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>win_by_runs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[win_by_runs]</local-name>
+            <parent-name>[matches.csv]</parent-name>
+            <remote-alias>win_by_runs</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches.csv_6F4EE19418D64E9D99FA7BE0CE18D7AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>win_by_wickets</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[win_by_wickets]</local-name>
+            <parent-name>[matches.csv]</parent-name>
+            <remote-alias>win_by_wickets</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches.csv_6F4EE19418D64E9D99FA7BE0CE18D7AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>player_of_match</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[player_of_match]</local-name>
+            <parent-name>[matches.csv]</parent-name>
+            <remote-alias>player_of_match</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches.csv_6F4EE19418D64E9D99FA7BE0CE18D7AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>venue</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[venue]</local-name>
+            <parent-name>[matches.csv]</parent-name>
+            <remote-alias>venue</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches.csv_6F4EE19418D64E9D99FA7BE0CE18D7AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>umpire1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[umpire1]</local-name>
+            <parent-name>[matches.csv]</parent-name>
+            <remote-alias>umpire1</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches.csv_6F4EE19418D64E9D99FA7BE0CE18D7AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>umpire2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[umpire2]</local-name>
+            <parent-name>[matches.csv]</parent-name>
+            <remote-alias>umpire2</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches.csv_6F4EE19418D64E9D99FA7BE0CE18D7AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>umpire3</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[umpire3]</local-name>
+            <parent-name>[matches.csv]</parent-name>
+            <remote-alias>umpire3</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[matches.csv_6F4EE19418D64E9D99FA7BE0CE18D7AE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>match_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[match_id]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>match_id</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_76C7B55C1BBE46E98636FB6C6FA4BEA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>inning</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[inning]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>inning</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_76C7B55C1BBE46E98636FB6C6FA4BEA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>batting_team</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[batting_team]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>batting_team</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_76C7B55C1BBE46E98636FB6C6FA4BEA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bowling_team</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[bowling_team]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>bowling_team</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_76C7B55C1BBE46E98636FB6C6FA4BEA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>over</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[over]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>over</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_76C7B55C1BBE46E98636FB6C6FA4BEA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ball</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ball]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>ball</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_76C7B55C1BBE46E98636FB6C6FA4BEA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>batsman</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[batsman]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>batsman</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_76C7B55C1BBE46E98636FB6C6FA4BEA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>non_striker</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[non_striker]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>non_striker</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_76C7B55C1BBE46E98636FB6C6FA4BEA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bowler</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[bowler]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>bowler</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_76C7B55C1BBE46E98636FB6C6FA4BEA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_super_over</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[is_super_over]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>is_super_over</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_76C7B55C1BBE46E98636FB6C6FA4BEA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wide_runs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[wide_runs]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>wide_runs</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_76C7B55C1BBE46E98636FB6C6FA4BEA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bye_runs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[bye_runs]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>bye_runs</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_76C7B55C1BBE46E98636FB6C6FA4BEA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>legbye_runs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[legbye_runs]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>legbye_runs</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_76C7B55C1BBE46E98636FB6C6FA4BEA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>noball_runs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[noball_runs]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>noball_runs</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_76C7B55C1BBE46E98636FB6C6FA4BEA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>penalty_runs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[penalty_runs]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>penalty_runs</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_76C7B55C1BBE46E98636FB6C6FA4BEA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>batsman_runs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[batsman_runs]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>batsman_runs</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_76C7B55C1BBE46E98636FB6C6FA4BEA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>extra_runs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[extra_runs]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>extra_runs</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_76C7B55C1BBE46E98636FB6C6FA4BEA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_runs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_runs]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>total_runs</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_76C7B55C1BBE46E98636FB6C6FA4BEA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>player_dismissed</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[player_dismissed]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>player_dismissed</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_76C7B55C1BBE46E98636FB6C6FA4BEA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dismissal_kind</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[dismissal_kind]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>dismissal_kind</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_76C7B55C1BBE46E98636FB6C6FA4BEA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fielder</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[fielder]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>fielder</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_76C7B55C1BBE46E98636FB6C6FA4BEA2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='deliveries.csv' datatype='table' name='[__tableau_internal_object_id__].[deliveries.csv_76C7B55C1BBE46E98636FB6C6FA4BEA2]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='matches.csv' datatype='table' name='[__tableau_internal_object_id__].[matches.csv_6F4EE19418D64E9D99FA7BE0CE18D7AE]' role='measure' type='quantitative' />
+      <column caption='Ball' datatype='integer' name='[ball]' role='measure' type='quantitative' />
+      <column caption='Batsman' datatype='string' name='[batsman]' role='dimension' type='nominal' />
+      <column caption='Batsman Runs' datatype='integer' name='[batsman_runs]' role='measure' type='quantitative' />
+      <column caption='Batting Team' datatype='string' name='[batting_team]' role='dimension' type='nominal' />
+      <column caption='Bowler' datatype='string' name='[bowler]' role='dimension' type='nominal' />
+      <column caption='Bowling Team' datatype='string' name='[bowling_team]' role='dimension' type='nominal' />
+      <column caption='Bye Runs' datatype='integer' name='[bye_runs]' role='measure' type='quantitative' />
+      <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Dismissal Kind' datatype='string' name='[dismissal_kind]' role='dimension' type='nominal' />
+      <column caption='Dl Applied' datatype='integer' name='[dl_applied]' role='measure' type='quantitative' />
+      <column caption='Extra Runs' datatype='integer' name='[extra_runs]' role='measure' type='quantitative' />
+      <column caption='Fielder' datatype='string' name='[fielder]' role='dimension' type='nominal' />
+      <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+      <column caption='Inning' datatype='integer' name='[inning]' role='measure' type='quantitative' />
+      <column caption='Is Super Over' datatype='integer' name='[is_super_over]' role='measure' type='quantitative' />
+      <column caption='Legbye Runs' datatype='integer' name='[legbye_runs]' role='measure' type='quantitative' />
+      <column caption='Match Id' datatype='integer' name='[match_id]' role='dimension' type='ordinal' />
+      <column caption='Noball Runs' datatype='integer' name='[noball_runs]' role='measure' type='quantitative' />
+      <column caption='Non Striker' datatype='string' name='[non_striker]' role='dimension' type='nominal' />
+      <column caption='Over' datatype='integer' name='[over]' role='measure' type='quantitative' />
+      <column caption='Penalty Runs' datatype='integer' name='[penalty_runs]' role='measure' type='quantitative' />
+      <column caption='Player Dismissed' datatype='string' name='[player_dismissed]' role='dimension' type='nominal' />
+      <column caption='Player Of Match' datatype='string' name='[player_of_match]' role='dimension' type='nominal' />
+      <column caption='Result' datatype='string' name='[result]' role='dimension' type='nominal' />
+      <column caption='Season' datatype='integer' name='[season]' role='measure' type='quantitative' />
+      <column caption='Team1' datatype='string' name='[team1]' role='dimension' type='nominal' />
+      <column caption='Team2' datatype='string' name='[team2]' role='dimension' type='nominal' />
+      <column caption='Toss Decision' datatype='string' name='[toss_decision]' role='dimension' type='nominal' />
+      <column caption='Toss Winner' datatype='string' name='[toss_winner]' role='dimension' type='nominal' />
+      <column caption='Total Runs' datatype='integer' name='[total_runs]' role='measure' type='quantitative' />
+      <column caption='Umpire1' datatype='string' name='[umpire1]' role='dimension' type='nominal' />
+      <column caption='Umpire2' datatype='string' name='[umpire2]' role='dimension' type='nominal' />
+      <column caption='Umpire3' datatype='string' name='[umpire3]' role='dimension' type='nominal' />
+      <column caption='Venue' datatype='string' name='[venue]' role='dimension' type='nominal' />
+      <column caption='Wide Runs' datatype='integer' name='[wide_runs]' role='measure' type='quantitative' />
+      <column caption='Win By Runs' datatype='integer' name='[win_by_runs]' role='measure' type='quantitative' />
+      <column caption='Win By Wickets' datatype='integer' name='[win_by_wickets]' role='measure' type='quantitative' />
+      <column caption='Winner' datatype='string' name='[winner]' role='dimension' type='nominal' />
+      <column-instance column='[result]' derivation='None' name='[none:result:nk]' pivot='key' type='nominal' />
+      <column-instance column='[toss_decision]' derivation='None' name='[none:toss_decision:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/DELL/Python for data science class/Sparks Foundation Intern Tasks/Tasks-5-Exploratory Data Analysis on Sports dataset/matches.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='12/12/2020 08:59:20 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='deliveries.csv_76C7B55C1BBE46E98636FB6C6FA4BEA2' table='[Extract].[deliveries.csv_76C7B55C1BBE46E98636FB6C6FA4BEA2]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+            <relation name='matches.csv_6F4EE19418D64E9D99FA7BE0CE18D7AE' table='[Extract].[matches.csv_6F4EE19418D64E9D99FA7BE0CE18D7AE]' type='table' />
+            <relation name='deliveries.csv_76C7B55C1BBE46E98636FB6C6FA4BEA2' table='[Extract].[deliveries.csv_76C7B55C1BBE46E98636FB6C6FA4BEA2]' type='table' />
+          </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+          <refresh>
+            <refresh-event add-from-file-path='matches' increment-value='%null%' refresh-type='create' rows-inserted='179834' timestamp-start='2020-12-12 20:59:20.961' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[id]</local-name>
+              <parent-name>[matches.csv_6F4EE19418D64E9D99FA7BE0CE18D7AE]</parent-name>
+              <remote-alias>id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>matches.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>756</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>season</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[season]</local-name>
+              <parent-name>[matches.csv_6F4EE19418D64E9D99FA7BE0CE18D7AE]</parent-name>
+              <remote-alias>season</remote-alias>
+              <ordinal>1</ordinal>
+              <family>matches.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>city</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[city]</local-name>
+              <parent-name>[matches.csv_6F4EE19418D64E9D99FA7BE0CE18D7AE]</parent-name>
+              <remote-alias>city</remote-alias>
+              <ordinal>2</ordinal>
+              <family>matches.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>33</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[date]</local-name>
+              <parent-name>[matches.csv_6F4EE19418D64E9D99FA7BE0CE18D7AE]</parent-name>
+              <remote-alias>date</remote-alias>
+              <ordinal>3</ordinal>
+              <family>matches.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>517</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>team1</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[team1]</local-name>
+              <parent-name>[matches.csv_6F4EE19418D64E9D99FA7BE0CE18D7AE]</parent-name>
+              <remote-alias>team1</remote-alias>
+              <ordinal>4</ordinal>
+              <family>matches.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>team2</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[team2]</local-name>
+              <parent-name>[matches.csv_6F4EE19418D64E9D99FA7BE0CE18D7AE]</parent-name>
+              <remote-alias>team2</remote-alias>
+              <ordinal>5</ordinal>
+              <family>matches.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>toss_winner</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[toss_winner]</local-name>
+              <parent-name>[matches.csv_6F4EE19418D64E9D99FA7BE0CE18D7AE]</parent-name>
+              <remote-alias>toss_winner</remote-alias>
+              <ordinal>6</ordinal>
+              <family>matches.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>toss_decision</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[toss_decision]</local-name>
+              <parent-name>[matches.csv_6F4EE19418D64E9D99FA7BE0CE18D7AE]</parent-name>
+              <remote-alias>toss_decision</remote-alias>
+              <ordinal>7</ordinal>
+              <family>matches.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>result</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[result]</local-name>
+              <parent-name>[matches.csv_6F4EE19418D64E9D99FA7BE0CE18D7AE]</parent-name>
+              <remote-alias>result</remote-alias>
+              <ordinal>8</ordinal>
+              <family>matches.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>dl_applied</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[dl_applied]</local-name>
+              <parent-name>[matches.csv_6F4EE19418D64E9D99FA7BE0CE18D7AE]</parent-name>
+              <remote-alias>dl_applied</remote-alias>
+              <ordinal>9</ordinal>
+              <family>matches.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>winner</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[winner]</local-name>
+              <parent-name>[matches.csv_6F4EE19418D64E9D99FA7BE0CE18D7AE]</parent-name>
+              <remote-alias>winner</remote-alias>
+              <ordinal>10</ordinal>
+              <family>matches.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>win_by_runs</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[win_by_runs]</local-name>
+              <parent-name>[matches.csv_6F4EE19418D64E9D99FA7BE0CE18D7AE]</parent-name>
+              <remote-alias>win_by_runs</remote-alias>
+              <ordinal>11</ordinal>
+              <family>matches.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>89</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>win_by_wickets</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[win_by_wickets]</local-name>
+              <parent-name>[matches.csv_6F4EE19418D64E9D99FA7BE0CE18D7AE]</parent-name>
+              <remote-alias>win_by_wickets</remote-alias>
+              <ordinal>12</ordinal>
+              <family>matches.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>player_of_match</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[player_of_match]</local-name>
+              <parent-name>[matches.csv_6F4EE19418D64E9D99FA7BE0CE18D7AE]</parent-name>
+              <remote-alias>player_of_match</remote-alias>
+              <ordinal>13</ordinal>
+              <family>matches.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>227</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>venue</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[venue]</local-name>
+              <parent-name>[matches.csv_6F4EE19418D64E9D99FA7BE0CE18D7AE]</parent-name>
+              <remote-alias>venue</remote-alias>
+              <ordinal>14</ordinal>
+              <family>matches.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>41</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>umpire1</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[umpire1]</local-name>
+              <parent-name>[matches.csv_6F4EE19418D64E9D99FA7BE0CE18D7AE]</parent-name>
+              <remote-alias>umpire1</remote-alias>
+              <ordinal>15</ordinal>
+              <family>matches.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>62</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>umpire2</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[umpire2]</local-name>
+              <parent-name>[matches.csv_6F4EE19418D64E9D99FA7BE0CE18D7AE]</parent-name>
+              <remote-alias>umpire2</remote-alias>
+              <ordinal>16</ordinal>
+              <family>matches.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>66</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>umpire3</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[umpire3]</local-name>
+              <parent-name>[matches.csv_6F4EE19418D64E9D99FA7BE0CE18D7AE]</parent-name>
+              <remote-alias>umpire3</remote-alias>
+              <ordinal>17</ordinal>
+              <family>matches.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>match_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[match_id]</local-name>
+              <parent-name>[deliveries.csv_76C7B55C1BBE46E98636FB6C6FA4BEA2]</parent-name>
+              <remote-alias>match_id</remote-alias>
+              <ordinal>18</ordinal>
+              <family>deliveries.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3749</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>inning</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[inning]</local-name>
+              <parent-name>[deliveries.csv_76C7B55C1BBE46E98636FB6C6FA4BEA2]</parent-name>
+              <remote-alias>inning</remote-alias>
+              <ordinal>19</ordinal>
+              <family>deliveries.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>batting_team</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[batting_team]</local-name>
+              <parent-name>[deliveries.csv_76C7B55C1BBE46E98636FB6C6FA4BEA2]</parent-name>
+              <remote-alias>batting_team</remote-alias>
+              <ordinal>20</ordinal>
+              <family>deliveries.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>bowling_team</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[bowling_team]</local-name>
+              <parent-name>[deliveries.csv_76C7B55C1BBE46E98636FB6C6FA4BEA2]</parent-name>
+              <remote-alias>bowling_team</remote-alias>
+              <ordinal>21</ordinal>
+              <family>deliveries.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>over</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[over]</local-name>
+              <parent-name>[deliveries.csv_76C7B55C1BBE46E98636FB6C6FA4BEA2]</parent-name>
+              <remote-alias>over</remote-alias>
+              <ordinal>22</ordinal>
+              <family>deliveries.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ball</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ball]</local-name>
+              <parent-name>[deliveries.csv_76C7B55C1BBE46E98636FB6C6FA4BEA2]</parent-name>
+              <remote-alias>ball</remote-alias>
+              <ordinal>23</ordinal>
+              <family>deliveries.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>batsman</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[batsman]</local-name>
+              <parent-name>[deliveries.csv_76C7B55C1BBE46E98636FB6C6FA4BEA2]</parent-name>
+              <remote-alias>batsman</remote-alias>
+              <ordinal>24</ordinal>
+              <family>deliveries.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1282</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>non_striker</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[non_striker]</local-name>
+              <parent-name>[deliveries.csv_76C7B55C1BBE46E98636FB6C6FA4BEA2]</parent-name>
+              <remote-alias>non_striker</remote-alias>
+              <ordinal>25</ordinal>
+              <family>deliveries.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1149</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>bowler</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[bowler]</local-name>
+              <parent-name>[deliveries.csv_76C7B55C1BBE46E98636FB6C6FA4BEA2]</parent-name>
+              <remote-alias>bowler</remote-alias>
+              <ordinal>26</ordinal>
+              <family>deliveries.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1034</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>is_super_over</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[is_super_over]</local-name>
+              <parent-name>[deliveries.csv_76C7B55C1BBE46E98636FB6C6FA4BEA2]</parent-name>
+              <remote-alias>is_super_over</remote-alias>
+              <ordinal>27</ordinal>
+              <family>deliveries.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>wide_runs</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[wide_runs]</local-name>
+              <parent-name>[deliveries.csv_76C7B55C1BBE46E98636FB6C6FA4BEA2]</parent-name>
+              <remote-alias>wide_runs</remote-alias>
+              <ordinal>28</ordinal>
+              <family>deliveries.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>bye_runs</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[bye_runs]</local-name>
+              <parent-name>[deliveries.csv_76C7B55C1BBE46E98636FB6C6FA4BEA2]</parent-name>
+              <remote-alias>bye_runs</remote-alias>
+              <ordinal>29</ordinal>
+              <family>deliveries.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>legbye_runs</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[legbye_runs]</local-name>
+              <parent-name>[deliveries.csv_76C7B55C1BBE46E98636FB6C6FA4BEA2]</parent-name>
+              <remote-alias>legbye_runs</remote-alias>
+              <ordinal>30</ordinal>
+              <family>deliveries.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>23</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>noball_runs</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[noball_runs]</local-name>
+              <parent-name>[deliveries.csv_76C7B55C1BBE46E98636FB6C6FA4BEA2]</parent-name>
+              <remote-alias>noball_runs</remote-alias>
+              <ordinal>31</ordinal>
+              <family>deliveries.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>penalty_runs</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[penalty_runs]</local-name>
+              <parent-name>[deliveries.csv_76C7B55C1BBE46E98636FB6C6FA4BEA2]</parent-name>
+              <remote-alias>penalty_runs</remote-alias>
+              <ordinal>32</ordinal>
+              <family>deliveries.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>batsman_runs</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[batsman_runs]</local-name>
+              <parent-name>[deliveries.csv_76C7B55C1BBE46E98636FB6C6FA4BEA2]</parent-name>
+              <remote-alias>batsman_runs</remote-alias>
+              <ordinal>33</ordinal>
+              <family>deliveries.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>extra_runs</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[extra_runs]</local-name>
+              <parent-name>[deliveries.csv_76C7B55C1BBE46E98636FB6C6FA4BEA2]</parent-name>
+              <remote-alias>extra_runs</remote-alias>
+              <ordinal>34</ordinal>
+              <family>deliveries.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_runs</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total_runs]</local-name>
+              <parent-name>[deliveries.csv_76C7B55C1BBE46E98636FB6C6FA4BEA2]</parent-name>
+              <remote-alias>total_runs</remote-alias>
+              <ordinal>35</ordinal>
+              <family>deliveries.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>player_dismissed</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[player_dismissed]</local-name>
+              <parent-name>[deliveries.csv_76C7B55C1BBE46E98636FB6C6FA4BEA2]</parent-name>
+              <remote-alias>player_dismissed</remote-alias>
+              <ordinal>36</ordinal>
+              <family>deliveries.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1713</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>dismissal_kind</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[dismissal_kind]</local-name>
+              <parent-name>[deliveries.csv_76C7B55C1BBE46E98636FB6C6FA4BEA2]</parent-name>
+              <remote-alias>dismissal_kind</remote-alias>
+              <ordinal>37</ordinal>
+              <family>deliveries.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>fielder</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[fielder]</local-name>
+              <parent-name>[deliveries.csv_76C7B55C1BBE46E98636FB6C6FA4BEA2]</parent-name>
+              <remote-alias>fielder</remote-alias>
+              <ordinal>38</ordinal>
+              <family>deliveries.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1980</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:result:nk]' type='palette'>
+            <map to='#3d6a98'>
+              <bucket>&quot;normal&quot;</bucket>
+            </map>
+            <map to='#926591'>
+              <bucket>&quot;no result&quot;</bucket>
+            </map>
+            <map to='#b8163a'>
+              <bucket>&quot;tie&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:toss_decision:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;bat&quot;</bucket>
+            </map>
+            <map to='#a27099'>
+              <bucket>&quot;field&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='deliveries.csv' id='deliveries.csv_76C7B55C1BBE46E98636FB6C6FA4BEA2'>
+            <properties context=''>
+              <relation connection='textscan.0izpq3y0xgz6q91d00ffn1xdaee8' name='deliveries.csv' table='[deliveries#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='match_id' ordinal='0' />
+                  <column datatype='integer' name='inning' ordinal='1' />
+                  <column datatype='string' name='batting_team' ordinal='2' />
+                  <column datatype='string' name='bowling_team' ordinal='3' />
+                  <column datatype='integer' name='over' ordinal='4' />
+                  <column datatype='integer' name='ball' ordinal='5' />
+                  <column datatype='string' name='batsman' ordinal='6' />
+                  <column datatype='string' name='non_striker' ordinal='7' />
+                  <column datatype='string' name='bowler' ordinal='8' />
+                  <column datatype='integer' name='is_super_over' ordinal='9' />
+                  <column datatype='integer' name='wide_runs' ordinal='10' />
+                  <column datatype='integer' name='bye_runs' ordinal='11' />
+                  <column datatype='integer' name='legbye_runs' ordinal='12' />
+                  <column datatype='integer' name='noball_runs' ordinal='13' />
+                  <column datatype='integer' name='penalty_runs' ordinal='14' />
+                  <column datatype='integer' name='batsman_runs' ordinal='15' />
+                  <column datatype='integer' name='extra_runs' ordinal='16' />
+                  <column datatype='integer' name='total_runs' ordinal='17' />
+                  <column datatype='string' name='player_dismissed' ordinal='18' />
+                  <column datatype='string' name='dismissal_kind' ordinal='19' />
+                  <column datatype='string' name='fielder' ordinal='20' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='deliveries.csv_76C7B55C1BBE46E98636FB6C6FA4BEA2' table='[Extract].[deliveries.csv_76C7B55C1BBE46E98636FB6C6FA4BEA2]' type='table' />
+            </properties>
+          </object>
+          <object caption='matches.csv' id='matches.csv_6F4EE19418D64E9D99FA7BE0CE18D7AE'>
+            <properties context=''>
+              <relation connection='textscan.0izpq3y0xgz6q91d00ffn1xdaee8' name='matches.csv' table='[matches#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='id' ordinal='0' />
+                  <column datatype='integer' name='season' ordinal='1' />
+                  <column datatype='string' name='city' ordinal='2' />
+                  <column datatype='date' name='date' ordinal='3' />
+                  <column datatype='string' name='team1' ordinal='4' />
+                  <column datatype='string' name='team2' ordinal='5' />
+                  <column datatype='string' name='toss_winner' ordinal='6' />
+                  <column datatype='string' name='toss_decision' ordinal='7' />
+                  <column datatype='string' name='result' ordinal='8' />
+                  <column datatype='integer' name='dl_applied' ordinal='9' />
+                  <column datatype='string' name='winner' ordinal='10' />
+                  <column datatype='integer' name='win_by_runs' ordinal='11' />
+                  <column datatype='integer' name='win_by_wickets' ordinal='12' />
+                  <column datatype='string' name='player_of_match' ordinal='13' />
+                  <column datatype='string' name='venue' ordinal='14' />
+                  <column datatype='string' name='umpire1' ordinal='15' />
+                  <column datatype='string' name='umpire2' ordinal='16' />
+                  <column datatype='string' name='umpire3' ordinal='17' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='matches.csv_6F4EE19418D64E9D99FA7BE0CE18D7AE' table='[Extract].[matches.csv_6F4EE19418D64E9D99FA7BE0CE18D7AE]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[id]' />
+              <expression op='[match_id]' />
+            </expression>
+            <first-end-point object-id='matches.csv_6F4EE19418D64E9D99FA7BE0CE18D7AE' />
+            <second-end-point object-id='deliveries.csv_76C7B55C1BBE46E98636FB6C6FA4BEA2' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='deliveries' inline='true' name='federated.1qp1xiw1xztkau1d1s0720s54c97' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='deliveries' name='textscan.1lucsyk1id4yz917ksnlo1d4zop5'>
+            <connection class='textscan' directory='C:/Users/DELL/Python for data science class/Sparks Foundation Intern Tasks/Tasks-5-Exploratory Data Analysis on Sports dataset' filename='deliveries.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1lucsyk1id4yz917ksnlo1d4zop5' name='deliveries.csv' table='[deliveries#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='match_id' ordinal='0' />
+            <column datatype='integer' name='inning' ordinal='1' />
+            <column datatype='string' name='batting_team' ordinal='2' />
+            <column datatype='string' name='bowling_team' ordinal='3' />
+            <column datatype='integer' name='over' ordinal='4' />
+            <column datatype='integer' name='ball' ordinal='5' />
+            <column datatype='string' name='batsman' ordinal='6' />
+            <column datatype='string' name='non_striker' ordinal='7' />
+            <column datatype='string' name='bowler' ordinal='8' />
+            <column datatype='integer' name='is_super_over' ordinal='9' />
+            <column datatype='integer' name='wide_runs' ordinal='10' />
+            <column datatype='integer' name='bye_runs' ordinal='11' />
+            <column datatype='integer' name='legbye_runs' ordinal='12' />
+            <column datatype='integer' name='noball_runs' ordinal='13' />
+            <column datatype='integer' name='penalty_runs' ordinal='14' />
+            <column datatype='integer' name='batsman_runs' ordinal='15' />
+            <column datatype='integer' name='extra_runs' ordinal='16' />
+            <column datatype='integer' name='total_runs' ordinal='17' />
+            <column datatype='string' name='player_dismissed' ordinal='18' />
+            <column datatype='string' name='dismissal_kind' ordinal='19' />
+            <column datatype='string' name='fielder' ordinal='20' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1lucsyk1id4yz917ksnlo1d4zop5' name='deliveries.csv' table='[deliveries#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='match_id' ordinal='0' />
+            <column datatype='integer' name='inning' ordinal='1' />
+            <column datatype='string' name='batting_team' ordinal='2' />
+            <column datatype='string' name='bowling_team' ordinal='3' />
+            <column datatype='integer' name='over' ordinal='4' />
+            <column datatype='integer' name='ball' ordinal='5' />
+            <column datatype='string' name='batsman' ordinal='6' />
+            <column datatype='string' name='non_striker' ordinal='7' />
+            <column datatype='string' name='bowler' ordinal='8' />
+            <column datatype='integer' name='is_super_over' ordinal='9' />
+            <column datatype='integer' name='wide_runs' ordinal='10' />
+            <column datatype='integer' name='bye_runs' ordinal='11' />
+            <column datatype='integer' name='legbye_runs' ordinal='12' />
+            <column datatype='integer' name='noball_runs' ordinal='13' />
+            <column datatype='integer' name='penalty_runs' ordinal='14' />
+            <column datatype='integer' name='batsman_runs' ordinal='15' />
+            <column datatype='integer' name='extra_runs' ordinal='16' />
+            <column datatype='integer' name='total_runs' ordinal='17' />
+            <column datatype='string' name='player_dismissed' ordinal='18' />
+            <column datatype='string' name='dismissal_kind' ordinal='19' />
+            <column datatype='string' name='fielder' ordinal='20' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>match_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[match_id]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>match_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_75D7D3EB949743C1999F4D55D1AB4848]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>inning</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[inning]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>inning</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_75D7D3EB949743C1999F4D55D1AB4848]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>batting_team</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[batting_team]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>batting_team</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_75D7D3EB949743C1999F4D55D1AB4848]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bowling_team</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[bowling_team]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>bowling_team</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_75D7D3EB949743C1999F4D55D1AB4848]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>over</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[over]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>over</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_75D7D3EB949743C1999F4D55D1AB4848]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ball</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ball]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>ball</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_75D7D3EB949743C1999F4D55D1AB4848]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>batsman</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[batsman]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>batsman</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_75D7D3EB949743C1999F4D55D1AB4848]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>non_striker</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[non_striker]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>non_striker</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_75D7D3EB949743C1999F4D55D1AB4848]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bowler</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[bowler]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>bowler</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_75D7D3EB949743C1999F4D55D1AB4848]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_super_over</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[is_super_over]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>is_super_over</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_75D7D3EB949743C1999F4D55D1AB4848]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wide_runs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[wide_runs]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>wide_runs</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_75D7D3EB949743C1999F4D55D1AB4848]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bye_runs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[bye_runs]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>bye_runs</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_75D7D3EB949743C1999F4D55D1AB4848]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>legbye_runs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[legbye_runs]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>legbye_runs</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_75D7D3EB949743C1999F4D55D1AB4848]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>noball_runs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[noball_runs]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>noball_runs</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_75D7D3EB949743C1999F4D55D1AB4848]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>penalty_runs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[penalty_runs]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>penalty_runs</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_75D7D3EB949743C1999F4D55D1AB4848]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>batsman_runs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[batsman_runs]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>batsman_runs</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_75D7D3EB949743C1999F4D55D1AB4848]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>extra_runs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[extra_runs]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>extra_runs</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_75D7D3EB949743C1999F4D55D1AB4848]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_runs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_runs]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>total_runs</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_75D7D3EB949743C1999F4D55D1AB4848]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>player_dismissed</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[player_dismissed]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>player_dismissed</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_75D7D3EB949743C1999F4D55D1AB4848]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dismissal_kind</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[dismissal_kind]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>dismissal_kind</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_75D7D3EB949743C1999F4D55D1AB4848]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fielder</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[fielder]</local-name>
+            <parent-name>[deliveries.csv]</parent-name>
+            <remote-alias>fielder</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_75D7D3EB949743C1999F4D55D1AB4848]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='deliveries.csv' datatype='table' name='[__tableau_internal_object_id__].[deliveries.csv_75D7D3EB949743C1999F4D55D1AB4848]' role='measure' type='quantitative' />
+      <column caption='Ball' datatype='integer' name='[ball]' role='measure' type='quantitative' />
+      <column caption='Batsman' datatype='string' name='[batsman]' role='dimension' type='nominal' />
+      <column caption='Batsman Runs' datatype='integer' name='[batsman_runs]' role='measure' type='quantitative' />
+      <column caption='Batting Team' datatype='string' name='[batting_team]' role='dimension' type='nominal' />
+      <column caption='Bowler' datatype='string' name='[bowler]' role='dimension' type='nominal' />
+      <column caption='Bowling Team' datatype='string' name='[bowling_team]' role='dimension' type='nominal' />
+      <column caption='Bye Runs' datatype='integer' name='[bye_runs]' role='measure' type='quantitative' />
+      <column caption='Dismissal Kind' datatype='string' name='[dismissal_kind]' role='dimension' type='nominal' />
+      <column caption='Extra Runs' datatype='integer' name='[extra_runs]' role='measure' type='quantitative' />
+      <column caption='Fielder' datatype='string' name='[fielder]' role='dimension' type='nominal' />
+      <column caption='Inning' datatype='integer' name='[inning]' role='measure' type='quantitative' />
+      <column caption='Is Super Over' datatype='integer' name='[is_super_over]' role='measure' type='quantitative' />
+      <column caption='Legbye Runs' datatype='integer' name='[legbye_runs]' role='measure' type='quantitative' />
+      <column caption='Match Id' datatype='integer' name='[match_id]' role='dimension' type='ordinal' />
+      <column caption='Noball Runs' datatype='integer' name='[noball_runs]' role='measure' type='quantitative' />
+      <column caption='Non Striker' datatype='string' name='[non_striker]' role='dimension' type='nominal' />
+      <column caption='Over' datatype='integer' name='[over]' role='measure' type='quantitative' />
+      <column caption='Penalty Runs' datatype='integer' name='[penalty_runs]' role='measure' type='quantitative' />
+      <column caption='Player Dismissed' datatype='string' name='[player_dismissed]' role='dimension' type='nominal' />
+      <column caption='Total Runs' datatype='integer' name='[total_runs]' role='measure' type='quantitative' />
+      <column caption='Wide Runs' datatype='integer' name='[wide_runs]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/DELL/Python for data science class/Sparks Foundation Intern Tasks/Tasks-5-Exploratory Data Analysis on Sports dataset/deliveries.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='12/12/2020 07:36:51 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='deliveries' increment-value='%null%' refresh-type='create' rows-inserted='179078' timestamp-start='2020-12-12 19:36:51.029' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>match_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[match_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>match_id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>deliveries.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3694</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_75D7D3EB949743C1999F4D55D1AB4848]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>inning</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[inning]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>inning</remote-alias>
+              <ordinal>1</ordinal>
+              <family>deliveries.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_75D7D3EB949743C1999F4D55D1AB4848]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>batting_team</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[batting_team]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>batting_team</remote-alias>
+              <ordinal>2</ordinal>
+              <family>deliveries.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_75D7D3EB949743C1999F4D55D1AB4848]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>bowling_team</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[bowling_team]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>bowling_team</remote-alias>
+              <ordinal>3</ordinal>
+              <family>deliveries.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_75D7D3EB949743C1999F4D55D1AB4848]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>over</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[over]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>over</remote-alias>
+              <ordinal>4</ordinal>
+              <family>deliveries.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_75D7D3EB949743C1999F4D55D1AB4848]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ball</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ball]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ball</remote-alias>
+              <ordinal>5</ordinal>
+              <family>deliveries.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_75D7D3EB949743C1999F4D55D1AB4848]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>batsman</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[batsman]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>batsman</remote-alias>
+              <ordinal>6</ordinal>
+              <family>deliveries.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1187</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_75D7D3EB949743C1999F4D55D1AB4848]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>non_striker</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[non_striker]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>non_striker</remote-alias>
+              <ordinal>7</ordinal>
+              <family>deliveries.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1267</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_75D7D3EB949743C1999F4D55D1AB4848]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>bowler</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[bowler]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>bowler</remote-alias>
+              <ordinal>8</ordinal>
+              <family>deliveries.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1166</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_75D7D3EB949743C1999F4D55D1AB4848]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>is_super_over</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[is_super_over]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>is_super_over</remote-alias>
+              <ordinal>9</ordinal>
+              <family>deliveries.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_75D7D3EB949743C1999F4D55D1AB4848]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>wide_runs</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[wide_runs]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>wide_runs</remote-alias>
+              <ordinal>10</ordinal>
+              <family>deliveries.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>23</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_75D7D3EB949743C1999F4D55D1AB4848]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>bye_runs</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[bye_runs]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>bye_runs</remote-alias>
+              <ordinal>11</ordinal>
+              <family>deliveries.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_75D7D3EB949743C1999F4D55D1AB4848]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>legbye_runs</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[legbye_runs]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>legbye_runs</remote-alias>
+              <ordinal>12</ordinal>
+              <family>deliveries.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_75D7D3EB949743C1999F4D55D1AB4848]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>noball_runs</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[noball_runs]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>noball_runs</remote-alias>
+              <ordinal>13</ordinal>
+              <family>deliveries.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_75D7D3EB949743C1999F4D55D1AB4848]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>penalty_runs</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[penalty_runs]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>penalty_runs</remote-alias>
+              <ordinal>14</ordinal>
+              <family>deliveries.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_75D7D3EB949743C1999F4D55D1AB4848]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>batsman_runs</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[batsman_runs]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>batsman_runs</remote-alias>
+              <ordinal>15</ordinal>
+              <family>deliveries.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_75D7D3EB949743C1999F4D55D1AB4848]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>extra_runs</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[extra_runs]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>extra_runs</remote-alias>
+              <ordinal>16</ordinal>
+              <family>deliveries.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_75D7D3EB949743C1999F4D55D1AB4848]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_runs</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total_runs]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_runs</remote-alias>
+              <ordinal>17</ordinal>
+              <family>deliveries.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_75D7D3EB949743C1999F4D55D1AB4848]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>player_dismissed</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[player_dismissed]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>player_dismissed</remote-alias>
+              <ordinal>18</ordinal>
+              <family>deliveries.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>901</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_75D7D3EB949743C1999F4D55D1AB4848]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>dismissal_kind</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[dismissal_kind]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>dismissal_kind</remote-alias>
+              <ordinal>19</ordinal>
+              <family>deliveries.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>36</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_75D7D3EB949743C1999F4D55D1AB4848]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>fielder</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[fielder]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>fielder</remote-alias>
+              <ordinal>20</ordinal>
+              <family>deliveries.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3382</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[deliveries.csv_75D7D3EB949743C1999F4D55D1AB4848]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='deliveries.csv' id='deliveries.csv_75D7D3EB949743C1999F4D55D1AB4848'>
+            <properties context=''>
+              <relation connection='textscan.1lucsyk1id4yz917ksnlo1d4zop5' name='deliveries.csv' table='[deliveries#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='match_id' ordinal='0' />
+                  <column datatype='integer' name='inning' ordinal='1' />
+                  <column datatype='string' name='batting_team' ordinal='2' />
+                  <column datatype='string' name='bowling_team' ordinal='3' />
+                  <column datatype='integer' name='over' ordinal='4' />
+                  <column datatype='integer' name='ball' ordinal='5' />
+                  <column datatype='string' name='batsman' ordinal='6' />
+                  <column datatype='string' name='non_striker' ordinal='7' />
+                  <column datatype='string' name='bowler' ordinal='8' />
+                  <column datatype='integer' name='is_super_over' ordinal='9' />
+                  <column datatype='integer' name='wide_runs' ordinal='10' />
+                  <column datatype='integer' name='bye_runs' ordinal='11' />
+                  <column datatype='integer' name='legbye_runs' ordinal='12' />
+                  <column datatype='integer' name='noball_runs' ordinal='13' />
+                  <column datatype='integer' name='penalty_runs' ordinal='14' />
+                  <column datatype='integer' name='batsman_runs' ordinal='15' />
+                  <column datatype='integer' name='extra_runs' ordinal='16' />
+                  <column datatype='integer' name='total_runs' ordinal='17' />
+                  <column datatype='string' name='player_dismissed' ordinal='18' />
+                  <column datatype='string' name='dismissal_kind' ordinal='19' />
+                  <column datatype='string' name='fielder' ordinal='20' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Cities Hosted IPL'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontname='Verdana' fontsize='20'>Cities Hosted IPL</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='matches' name='federated.013eysw09bdiv317r5eh50ypnwv8' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.013eysw09bdiv317r5eh50ypnwv8'>
+            <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column-instance column='[city]' derivation='None' name='[none:city:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.013eysw09bdiv317r5eh50ypnwv8].[Longitude (generated)]' field-type='quantitative' max='11982736.751906252' min='5732223.9988702834' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.013eysw09bdiv317r5eh50ypnwv8].[Latitude (generated)]' field-type='quantitative' max='3957986.1790544428' min='945380.64646285772' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#4e79a7' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#4e79a7' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.013eysw09bdiv317r5eh50ypnwv8].[none:city:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#00aaff' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.013eysw09bdiv317r5eh50ypnwv8].[Latitude (generated)]</rows>
+        <cols>[federated.013eysw09bdiv317r5eh50ypnwv8].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{15B87E70-9F50-474F-9FCC-65F2B1882C3D}' />
+    </worksheet>
+    <worksheet name='City- Most IPL matched hosted'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Verdana' fontsize='18'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='matches' name='federated.013eysw09bdiv317r5eh50ypnwv8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.013eysw09bdiv317r5eh50ypnwv8'>
+            <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column-instance column='[city]' derivation='Count' name='[cnt:city:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[city]' derivation='None' name='[none:city:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e6ecf0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.013eysw09bdiv317r5eh50ypnwv8].[cnt:city:qk]' />
+              <color column='[federated.013eysw09bdiv317r5eh50ypnwv8].[cnt:city:qk]' />
+              <text column='[federated.013eysw09bdiv317r5eh50ypnwv8].[none:city:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{A4DA7D73-9705-49C0-8AA4-42BDBE5E8B8D}' />
+    </worksheet>
+    <worksheet name='Match Results'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#606b76' fontname='Verdana' fontsize='20'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='matches' name='federated.013eysw09bdiv317r5eh50ypnwv8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.013eysw09bdiv317r5eh50ypnwv8'>
+            <column-instance column='[result]' derivation='Count' name='[cnt:result:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[result]' derivation='None' name='[none:result:nk]' pivot='key' type='nominal' />
+            <column caption='Result' datatype='string' name='[result]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+            <format attr='width' value='455' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='text-align' data-class='total' scope='rows' value='center' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e9f0f1' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.013eysw09bdiv317r5eh50ypnwv8].[cnt:result:qk]' />
+              <text column='[federated.013eysw09bdiv317r5eh50ypnwv8].[none:result:nk]' />
+              <color column='[federated.013eysw09bdiv317r5eh50ypnwv8].[none:result:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{5593387C-C25E-473F-A222-468657EEA1F4}' />
+    </worksheet>
+    <worksheet name='Most Wins Teams for season 2008-2019'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Verdana' fontsize='18'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='matches' name='federated.013eysw09bdiv317r5eh50ypnwv8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.013eysw09bdiv317r5eh50ypnwv8'>
+            <column-instance column='[id]' derivation='Count' name='[cnt:id:qk]' pivot='key' type='quantitative' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[season]' derivation='None' name='[none:season:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[winner]' derivation='None' name='[none:winner:nk]' pivot='key' type='nominal' />
+            <column caption='Season' datatype='integer' name='[season]' role='measure' type='quantitative' />
+            <column caption='Winner' datatype='string' name='[winner]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.013eysw09bdiv317r5eh50ypnwv8].[none:season:ok]'>
+            <groupfilter function='level-members' level='[none:season:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.013eysw09bdiv317r5eh50ypnwv8].[none:winner:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.013eysw09bdiv317r5eh50ypnwv8].[cnt:id:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.013eysw09bdiv317r5eh50ypnwv8].[none:season:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Verdana' />
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.013eysw09bdiv317r5eh50ypnwv8].[cnt:id:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#606b76' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.013eysw09bdiv317r5eh50ypnwv8].[none:winner:nk]</rows>
+        <cols>[federated.013eysw09bdiv317r5eh50ypnwv8].[cnt:id:qk]</cols>
+      </table>
+      <simple-id uuid='{D985ED02-83A5-49DD-9E75-B1A354BD457B}' />
+    </worksheet>
+    <worksheet name='Player of the match'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Verdana' fontsize='18'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='matches' name='federated.013eysw09bdiv317r5eh50ypnwv8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.013eysw09bdiv317r5eh50ypnwv8'>
+            <column-instance column='[player_of_match]' derivation='Count' name='[cnt:player_of_match:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[player_of_match]' derivation='None' name='[none:player_of_match:nk]' pivot='key' type='nominal' />
+            <column-instance column='[season]' derivation='None' name='[none:season:ok]' pivot='key' type='ordinal' />
+            <column caption='Player Of Match' datatype='string' name='[player_of_match]' role='dimension' type='nominal' />
+            <column caption='Season' datatype='integer' name='[season]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.013eysw09bdiv317r5eh50ypnwv8].[none:season:ok]'>
+            <groupfilter function='level-members' level='[none:season:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.013eysw09bdiv317r5eh50ypnwv8].[none:season:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.013eysw09bdiv317r5eh50ypnwv8].[cnt:player_of_match:qk]' palette='brown_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f5ead7' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.013eysw09bdiv317r5eh50ypnwv8].[cnt:player_of_match:qk]' />
+              <color column='[federated.013eysw09bdiv317r5eh50ypnwv8].[cnt:player_of_match:qk]' />
+              <text column='[federated.013eysw09bdiv317r5eh50ypnwv8].[none:player_of_match:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{BF7F420E-DF60-48D9-A1DF-CCC144DA89B9}' />
+    </worksheet>
+    <worksheet name='Sheet 11'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{D618060C-3248-4D95-AF67-CD9D5F398777}' />
+    </worksheet>
+    <worksheet name='Success Rate of matches per Venue w.r.t. Toss Decision'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Verdana' fontsize='18'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='matches' name='federated.013eysw09bdiv317r5eh50ypnwv8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.013eysw09bdiv317r5eh50ypnwv8'>
+            <column-instance column='[winner]' derivation='Count' name='[cnt:winner:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[season]' derivation='None' name='[none:season:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[toss_decision]' derivation='None' name='[none:toss_decision:nk]' pivot='key' type='nominal' />
+            <column-instance column='[venue]' derivation='None' name='[none:venue:nk]' pivot='key' type='nominal' />
+            <column-instance column='[winner]' derivation='Count' name='[pcto:cnt:winner:qk:2]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='CellInPane' type='PctTotal' />
+            </column-instance>
+            <column caption='Season' datatype='integer' name='[season]' role='measure' type='quantitative' />
+            <column caption='Toss Decision' datatype='string' name='[toss_decision]' role='dimension' type='nominal' />
+            <column caption='Venue' datatype='string' name='[venue]' role='dimension' type='nominal' />
+            <column caption='Winner' datatype='string' name='[winner]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.013eysw09bdiv317r5eh50ypnwv8].[none:season:ok]'>
+            <groupfilter function='level-members' level='[none:season:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.013eysw09bdiv317r5eh50ypnwv8].[none:venue:nk]'>
+            <groupfilter function='level-members' level='[none:venue:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.013eysw09bdiv317r5eh50ypnwv8].[none:venue:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.013eysw09bdiv317r5eh50ypnwv8].[cnt:winner:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.013eysw09bdiv317r5eh50ypnwv8].[none:venue:nk]</column>
+            <column>[federated.013eysw09bdiv317r5eh50ypnwv8].[none:season:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.013eysw09bdiv317r5eh50ypnwv8].[pcto:cnt:winner:qk:2]' value='p0%' />
+            <format attr='font-weight' field='[federated.013eysw09bdiv317r5eh50ypnwv8].[pcto:cnt:winner:qk:2]' value='normal' />
+            <format attr='color' field='[federated.013eysw09bdiv317r5eh50ypnwv8].[pcto:cnt:winner:qk:2]' value='#ffffff' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e6e6e6' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Verdana' />
+            <format attr='font-size' value='8' />
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#1b1b1b' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.013eysw09bdiv317r5eh50ypnwv8].[none:toss_decision:nk]' />
+              <text column='[federated.013eysw09bdiv317r5eh50ypnwv8].[pcto:cnt:winner:qk:2]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.013eysw09bdiv317r5eh50ypnwv8].[none:venue:nk]</rows>
+        <cols>[federated.013eysw09bdiv317r5eh50ypnwv8].[cnt:winner:qk]</cols>
+      </table>
+      <simple-id uuid='{593A1692-929D-457F-B6FF-73547C2C09B3}' />
+    </worksheet>
+    <worksheet name='Venue - Most IPL matched hosted'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Verdana' fontsize='18'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='matches' name='federated.013eysw09bdiv317r5eh50ypnwv8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.013eysw09bdiv317r5eh50ypnwv8'>
+            <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column-instance column='[venue]' derivation='Count' name='[cnt:venue:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[city]' derivation='None' name='[none:city:nk]' pivot='key' type='nominal' />
+            <column-instance column='[venue]' derivation='None' name='[none:venue:nk]' pivot='key' type='nominal' />
+            <column caption='Venue' datatype='string' name='[venue]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e6ecf0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.013eysw09bdiv317r5eh50ypnwv8].[cnt:venue:qk]' />
+              <color column='[federated.013eysw09bdiv317r5eh50ypnwv8].[cnt:venue:qk]' />
+              <text column='[federated.013eysw09bdiv317r5eh50ypnwv8].[none:venue:nk]' />
+              <text column='[federated.013eysw09bdiv317r5eh50ypnwv8].[cnt:venue:qk]' />
+              <text column='[federated.013eysw09bdiv317r5eh50ypnwv8].[none:city:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{A0710FE0-61AA-44F2-9D59-507D97347017}' />
+    </worksheet>
+    <worksheet name='Win By Runs-Average'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Verdana' fontsize='19'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='matches' name='federated.013eysw09bdiv317r5eh50ypnwv8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.013eysw09bdiv317r5eh50ypnwv8'>
+            <column-instance column='[win_by_runs]' derivation='Avg' name='[avg:win_by_runs:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[season]' derivation='None' name='[none:season:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[venue]' derivation='None' name='[none:venue:nk]' pivot='key' type='nominal' />
+            <column-instance column='[winner]' derivation='None' name='[none:winner:nk]' pivot='key' type='nominal' />
+            <column caption='Season' datatype='integer' name='[season]' role='measure' type='quantitative' />
+            <column caption='Venue' datatype='string' name='[venue]' role='dimension' type='nominal' />
+            <column caption='Win By Runs' datatype='integer' name='[win_by_runs]' role='measure' type='quantitative' />
+            <column caption='Winner' datatype='string' name='[winner]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.013eysw09bdiv317r5eh50ypnwv8].[none:season:ok]'>
+            <groupfilter function='level-members' level='[none:season:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.013eysw09bdiv317r5eh50ypnwv8].[none:venue:nk]'>
+            <groupfilter function='level-members' level='[none:venue:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.013eysw09bdiv317r5eh50ypnwv8].[none:winner:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.013eysw09bdiv317r5eh50ypnwv8].[avg:win_by_runs:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.013eysw09bdiv317r5eh50ypnwv8].[none:venue:nk]</column>
+            <column>[federated.013eysw09bdiv317r5eh50ypnwv8].[none:season:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.013eysw09bdiv317r5eh50ypnwv8].[avg:win_by_runs:qk]' value='n#,##0;-#,##0' />
+            <format attr='font-family' field='[federated.013eysw09bdiv317r5eh50ypnwv8].[avg:win_by_runs:qk]' value='Verdana' />
+            <format attr='color' field='[federated.013eysw09bdiv317r5eh50ypnwv8].[avg:win_by_runs:qk]' value='#1b1b1b' />
+            <format attr='font-weight' field='[federated.013eysw09bdiv317r5eh50ypnwv8].[avg:win_by_runs:qk]' value='normal' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-family' field='[federated.013eysw09bdiv317r5eh50ypnwv8].[none:winner:nk]' value='Verdana' />
+            <format attr='font-weight' field='[federated.013eysw09bdiv317r5eh50ypnwv8].[none:winner:nk]' value='normal' />
+            <format attr='font-size' field='[federated.013eysw09bdiv317r5eh50ypnwv8].[none:winner:nk]' value='8' />
+            <format attr='color' field='[federated.013eysw09bdiv317r5eh50ypnwv8].[none:winner:nk]' value='#000000' />
+            <format attr='font-family' field='[federated.013eysw09bdiv317r5eh50ypnwv8].[avg:win_by_runs:qk]' value='Verdana' />
+            <format attr='font-weight' field='[federated.013eysw09bdiv317r5eh50ypnwv8].[avg:win_by_runs:qk]' value='normal' />
+            <format attr='color' field='[federated.013eysw09bdiv317r5eh50ypnwv8].[avg:win_by_runs:qk]' value='#1b1b1b' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e7f1f5' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.013eysw09bdiv317r5eh50ypnwv8].[avg:win_by_runs:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#606b76' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.013eysw09bdiv317r5eh50ypnwv8].[none:winner:nk]</rows>
+        <cols>[federated.013eysw09bdiv317r5eh50ypnwv8].[avg:win_by_runs:qk]</cols>
+      </table>
+      <simple-id uuid='{CA5EC3DA-0580-4E9B-9ED0-695704E4AA9A}' />
+    </worksheet>
+    <worksheet name='Win By Wickets-Average'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Verdana' fontsize='19'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='matches' name='federated.013eysw09bdiv317r5eh50ypnwv8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.013eysw09bdiv317r5eh50ypnwv8'>
+            <column-instance column='[win_by_wickets]' derivation='Avg' name='[avg:win_by_wickets:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[season]' derivation='None' name='[none:season:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[venue]' derivation='None' name='[none:venue:nk]' pivot='key' type='nominal' />
+            <column-instance column='[winner]' derivation='None' name='[none:winner:nk]' pivot='key' type='nominal' />
+            <column caption='Season' datatype='integer' name='[season]' role='measure' type='quantitative' />
+            <column caption='Venue' datatype='string' name='[venue]' role='dimension' type='nominal' />
+            <column caption='Win By Wickets' datatype='integer' name='[win_by_wickets]' role='measure' type='quantitative' />
+            <column caption='Winner' datatype='string' name='[winner]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.013eysw09bdiv317r5eh50ypnwv8].[none:season:ok]'>
+            <groupfilter function='level-members' level='[none:season:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.013eysw09bdiv317r5eh50ypnwv8].[none:venue:nk]'>
+            <groupfilter function='level-members' level='[none:venue:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.013eysw09bdiv317r5eh50ypnwv8].[none:winner:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.013eysw09bdiv317r5eh50ypnwv8].[avg:win_by_wickets:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.013eysw09bdiv317r5eh50ypnwv8].[none:venue:nk]</column>
+            <column>[federated.013eysw09bdiv317r5eh50ypnwv8].[none:season:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.013eysw09bdiv317r5eh50ypnwv8].[avg:win_by_wickets:qk]' value='n#,##0;-#,##0' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-family' field='[federated.013eysw09bdiv317r5eh50ypnwv8].[none:winner:nk]' value='Verdana' />
+            <format attr='font-weight' field='[federated.013eysw09bdiv317r5eh50ypnwv8].[none:winner:nk]' value='normal' />
+            <format attr='font-size' field='[federated.013eysw09bdiv317r5eh50ypnwv8].[none:winner:nk]' value='8' />
+            <format attr='color' field='[federated.013eysw09bdiv317r5eh50ypnwv8].[none:winner:nk]' value='#000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e7f1f5' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.013eysw09bdiv317r5eh50ypnwv8].[avg:win_by_wickets:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#499894' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.013eysw09bdiv317r5eh50ypnwv8].[none:winner:nk]</rows>
+        <cols>[federated.013eysw09bdiv317r5eh50ypnwv8].[avg:win_by_wickets:qk]</cols>
+      </table>
+      <simple-id uuid='{7025A572-B2DD-40E2-9536-231CA018CAFA}' />
+    </worksheet>
+    <worksheet name='Win percentage by toss'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Verdana' fontsize='17'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='matches' name='federated.013eysw09bdiv317r5eh50ypnwv8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.013eysw09bdiv317r5eh50ypnwv8'>
+            <column-instance column='[toss_winner]' derivation='Count' name='[cnt:toss_winner:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[toss_decision]' derivation='None' name='[none:toss_decision:nk]' pivot='key' type='nominal' />
+            <column-instance column='[winner]' derivation='None' name='[none:winner:nk]' pivot='key' type='nominal' />
+            <column-instance column='[toss_winner]' derivation='Count' name='[pcto:cnt:toss_winner:qk:2]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='CellInPane' type='PctTotal' />
+            </column-instance>
+            <column caption='Toss Decision' datatype='string' name='[toss_decision]' role='dimension' type='nominal' />
+            <column caption='Toss Winner' datatype='string' name='[toss_winner]' role='dimension' type='nominal' />
+            <column caption='Winner' datatype='string' name='[winner]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.013eysw09bdiv317r5eh50ypnwv8].[none:winner:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.013eysw09bdiv317r5eh50ypnwv8].[cnt:toss_winner:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.013eysw09bdiv317r5eh50ypnwv8].[pcto:cnt:toss_winner:qk:2]' value='p0%' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-family' field='[federated.013eysw09bdiv317r5eh50ypnwv8].[none:winner:nk]' value='Verdana' />
+            <format attr='font-weight' field='[federated.013eysw09bdiv317r5eh50ypnwv8].[none:winner:nk]' value='bold' />
+            <format attr='color' field='[federated.013eysw09bdiv317r5eh50ypnwv8].[none:winner:nk]' value='#333333' />
+            <format attr='font-family' field='[federated.013eysw09bdiv317r5eh50ypnwv8].[cnt:toss_winner:qk]' value='Verdana' />
+            <format attr='font-weight' field='[federated.013eysw09bdiv317r5eh50ypnwv8].[cnt:toss_winner:qk]' value='bold' />
+            <format attr='color' field='[federated.013eysw09bdiv317r5eh50ypnwv8].[cnt:toss_winner:qk]' value='#333333' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.013eysw09bdiv317r5eh50ypnwv8].[none:toss_decision:nk]' />
+              <text column='[federated.013eysw09bdiv317r5eh50ypnwv8].[pcto:cnt:toss_winner:qk:2]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.013eysw09bdiv317r5eh50ypnwv8].[none:winner:nk]</rows>
+        <cols>[federated.013eysw09bdiv317r5eh50ypnwv8].[cnt:toss_winner:qk]</cols>
+      </table>
+      <simple-id uuid='{73302BAA-7F66-4DA8-A57F-1D5D758612EC}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='51'>
+    <window class='worksheet' name='Cities Hosted IPL'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{57681B9F-E7A3-45B8-A622-ABFB85CB1762}' />
+    </window>
+    <window class='worksheet' name='City- Most IPL matched hosted'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.013eysw09bdiv317r5eh50ypnwv8].[cnt:city:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5FE490EF-A632-458A-9D1E-42B28E01278C}' />
+    </window>
+    <window class='worksheet' name='Venue - Most IPL matched hosted'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.013eysw09bdiv317r5eh50ypnwv8].[cnt:venue:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{529A1E6D-D7C3-4D00-A430-2FF771685602}' />
+    </window>
+    <window class='worksheet' name='Match Results'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.013eysw09bdiv317r5eh50ypnwv8].[none:result:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{FFBF3250-D614-4F67-94CE-7F6A11CB5809}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Most Wins Teams for season 2008-2019'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.013eysw09bdiv317r5eh50ypnwv8].[none:season:ok]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{D72F7EA3-D6D4-438E-9E66-1E59F2B1D9AF}' />
+    </window>
+    <window class='worksheet' name='Win percentage by toss'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.013eysw09bdiv317r5eh50ypnwv8].[none:toss_decision:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{B014E361-EC4D-4983-8F8C-010BF96C9F2C}' />
+    </window>
+    <window class='worksheet' name='Success Rate of matches per Venue w.r.t. Toss Decision'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.013eysw09bdiv317r5eh50ypnwv8].[none:season:ok]' type='filter' />
+            <card pane-specification-id='0' param='[federated.013eysw09bdiv317r5eh50ypnwv8].[none:toss_decision:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{16EFB94D-B121-44BC-8CED-EE0289DF9926}' />
+    </window>
+    <window class='worksheet' name='Win By Runs-Average'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.013eysw09bdiv317r5eh50ypnwv8].[none:venue:nk]' type='filter' />
+            <card mode='checkdropdown' param='[federated.013eysw09bdiv317r5eh50ypnwv8].[none:season:ok]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{6915B5DD-C33C-460F-9EF3-0E0D287CCB0A}' />
+    </window>
+    <window class='worksheet' name='Win By Wickets-Average'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.013eysw09bdiv317r5eh50ypnwv8].[none:venue:nk]' type='filter' />
+            <card mode='checkdropdown' param='[federated.013eysw09bdiv317r5eh50ypnwv8].[none:season:ok]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{B4F39172-D76C-419C-8BF2-82BF65B94D5C}' />
+    </window>
+    <window class='worksheet' name='Player of the match'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='checkdropdown' param='[federated.013eysw09bdiv317r5eh50ypnwv8].[none:season:ok]' type='filter' />
+            <card pane-specification-id='0' param='[federated.013eysw09bdiv317r5eh50ypnwv8].[cnt:player_of_match:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F602AE6C-2E20-41C5-A04B-6785C88542C5}' />
+    </window>
+    <window class='worksheet' name='Sheet 11'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{572D07EE-AE1B-411B-A175-71E451B8F6D9}' />
+    </window>
+  </windows>
+</workbook>

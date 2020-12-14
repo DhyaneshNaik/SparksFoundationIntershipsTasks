@@ -1,0 +1,2388 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20202.20.1110.1614                               -->
+<workbook source-build='2020.2.8 (20202.20.1110.1614)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource inline='true' name='Clipboard_20201214T170955' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Clipboard_20201214T170955' name='Clipboard_20201214T170955leaf'>
+            <connection class='textscan' directory='C:/Users/DELL/AppData/Local/Temp/TableauTemp/1d47dmh198wx170zj7v3l0325hux' filename='Clipboard_20201214T170955.txt' temporary='yes' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='Clipboard_20201214T170955leaf' name='Clipboard_20201214T170955#txt' table='[Clipboard_20201214T170955#txt]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='Clipboard_20201214T170955leaf' name='Clipboard_20201214T170955#txt' table='[Clipboard_20201214T170955#txt]' type='table' />
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='Clipboard_20201214T170955' datatype='table' name='[__tableau_internal_object_id__].[Clipboard_20201214T170955]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Clipboard_20201214T170955' id='Clipboard_20201214T170955'>
+            <properties context=''>
+              <relation connection='Clipboard_20201214T170955leaf' name='Clipboard_20201214T170955#txt' table='[Clipboard_20201214T170955#txt]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='covid-data' inline='true' name='federated.119wpr11oho2rk1e9qbfl0rlresp' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='covid-data' name='textscan.0mzu8b71ymlwtj1g3bgip1so79t6'>
+            <connection class='textscan' directory='C:/Users/DELL/Python for data science class/Sparks Foundation Intern Tasks/Tasks-8-Exploratory Data Analysis - Covid 19' filename='covid-data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0mzu8b71ymlwtj1g3bgip1so79t6' name='covid-data.csv' table='[covid-data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='iso_code' ordinal='0' />
+            <column datatype='string' name='continent' ordinal='1' />
+            <column datatype='string' name='location' ordinal='2' />
+            <column datatype='date' name='date' ordinal='3' />
+            <column datatype='real' name='total_cases' ordinal='4' />
+            <column datatype='real' name='new_cases' ordinal='5' />
+            <column datatype='real' name='new_cases_smoothed' ordinal='6' />
+            <column datatype='real' name='total_deaths' ordinal='7' />
+            <column datatype='real' name='new_deaths' ordinal='8' />
+            <column datatype='real' name='new_deaths_smoothed' ordinal='9' />
+            <column datatype='real' name='total_cases_per_million' ordinal='10' />
+            <column datatype='real' name='new_cases_per_million' ordinal='11' />
+            <column datatype='real' name='new_cases_smoothed_per_million' ordinal='12' />
+            <column datatype='real' name='total_deaths_per_million' ordinal='13' />
+            <column datatype='real' name='new_deaths_per_million' ordinal='14' />
+            <column datatype='real' name='new_deaths_smoothed_per_million' ordinal='15' />
+            <column datatype='real' name='reproduction_rate' ordinal='16' />
+            <column datatype='string' name='icu_patients' ordinal='17' />
+            <column datatype='string' name='icu_patients_per_million' ordinal='18' />
+            <column datatype='string' name='hosp_patients' ordinal='19' />
+            <column datatype='string' name='hosp_patients_per_million' ordinal='20' />
+            <column datatype='string' name='weekly_icu_admissions' ordinal='21' />
+            <column datatype='string' name='weekly_icu_admissions_per_million' ordinal='22' />
+            <column datatype='string' name='weekly_hosp_admissions' ordinal='23' />
+            <column datatype='string' name='weekly_hosp_admissions_per_million' ordinal='24' />
+            <column datatype='string' name='new_tests' ordinal='25' />
+            <column datatype='string' name='total_tests' ordinal='26' />
+            <column datatype='string' name='total_tests_per_thousand' ordinal='27' />
+            <column datatype='string' name='new_tests_per_thousand' ordinal='28' />
+            <column datatype='string' name='new_tests_smoothed' ordinal='29' />
+            <column datatype='string' name='new_tests_smoothed_per_thousand' ordinal='30' />
+            <column datatype='string' name='positive_rate' ordinal='31' />
+            <column datatype='string' name='tests_per_case' ordinal='32' />
+            <column datatype='string' name='tests_units' ordinal='33' />
+            <column datatype='real' name='stringency_index' ordinal='34' />
+            <column datatype='real' name='population' ordinal='35' />
+            <column datatype='real' name='population_density' ordinal='36' />
+            <column datatype='real' name='median_age' ordinal='37' />
+            <column datatype='real' name='aged_65_older' ordinal='38' />
+            <column datatype='real' name='aged_70_older' ordinal='39' />
+            <column datatype='real' name='gdp_per_capita' ordinal='40' />
+            <column datatype='real' name='extreme_poverty' ordinal='41' />
+            <column datatype='real' name='cardiovasc_death_rate' ordinal='42' />
+            <column datatype='real' name='diabetes_prevalence' ordinal='43' />
+            <column datatype='real' name='female_smokers' ordinal='44' />
+            <column datatype='real' name='male_smokers' ordinal='45' />
+            <column datatype='real' name='handwashing_facilities' ordinal='46' />
+            <column datatype='real' name='hospital_beds_per_thousand' ordinal='47' />
+            <column datatype='real' name='life_expectancy' ordinal='48' />
+            <column datatype='real' name='human_development_index' ordinal='49' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0mzu8b71ymlwtj1g3bgip1so79t6' name='covid-data.csv' table='[covid-data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='iso_code' ordinal='0' />
+            <column datatype='string' name='continent' ordinal='1' />
+            <column datatype='string' name='location' ordinal='2' />
+            <column datatype='date' name='date' ordinal='3' />
+            <column datatype='real' name='total_cases' ordinal='4' />
+            <column datatype='real' name='new_cases' ordinal='5' />
+            <column datatype='real' name='new_cases_smoothed' ordinal='6' />
+            <column datatype='real' name='total_deaths' ordinal='7' />
+            <column datatype='real' name='new_deaths' ordinal='8' />
+            <column datatype='real' name='new_deaths_smoothed' ordinal='9' />
+            <column datatype='real' name='total_cases_per_million' ordinal='10' />
+            <column datatype='real' name='new_cases_per_million' ordinal='11' />
+            <column datatype='real' name='new_cases_smoothed_per_million' ordinal='12' />
+            <column datatype='real' name='total_deaths_per_million' ordinal='13' />
+            <column datatype='real' name='new_deaths_per_million' ordinal='14' />
+            <column datatype='real' name='new_deaths_smoothed_per_million' ordinal='15' />
+            <column datatype='real' name='reproduction_rate' ordinal='16' />
+            <column datatype='string' name='icu_patients' ordinal='17' />
+            <column datatype='string' name='icu_patients_per_million' ordinal='18' />
+            <column datatype='string' name='hosp_patients' ordinal='19' />
+            <column datatype='string' name='hosp_patients_per_million' ordinal='20' />
+            <column datatype='string' name='weekly_icu_admissions' ordinal='21' />
+            <column datatype='string' name='weekly_icu_admissions_per_million' ordinal='22' />
+            <column datatype='string' name='weekly_hosp_admissions' ordinal='23' />
+            <column datatype='string' name='weekly_hosp_admissions_per_million' ordinal='24' />
+            <column datatype='string' name='new_tests' ordinal='25' />
+            <column datatype='string' name='total_tests' ordinal='26' />
+            <column datatype='string' name='total_tests_per_thousand' ordinal='27' />
+            <column datatype='string' name='new_tests_per_thousand' ordinal='28' />
+            <column datatype='string' name='new_tests_smoothed' ordinal='29' />
+            <column datatype='string' name='new_tests_smoothed_per_thousand' ordinal='30' />
+            <column datatype='string' name='positive_rate' ordinal='31' />
+            <column datatype='string' name='tests_per_case' ordinal='32' />
+            <column datatype='string' name='tests_units' ordinal='33' />
+            <column datatype='real' name='stringency_index' ordinal='34' />
+            <column datatype='real' name='population' ordinal='35' />
+            <column datatype='real' name='population_density' ordinal='36' />
+            <column datatype='real' name='median_age' ordinal='37' />
+            <column datatype='real' name='aged_65_older' ordinal='38' />
+            <column datatype='real' name='aged_70_older' ordinal='39' />
+            <column datatype='real' name='gdp_per_capita' ordinal='40' />
+            <column datatype='real' name='extreme_poverty' ordinal='41' />
+            <column datatype='real' name='cardiovasc_death_rate' ordinal='42' />
+            <column datatype='real' name='diabetes_prevalence' ordinal='43' />
+            <column datatype='real' name='female_smokers' ordinal='44' />
+            <column datatype='real' name='male_smokers' ordinal='45' />
+            <column datatype='real' name='handwashing_facilities' ordinal='46' />
+            <column datatype='real' name='hospital_beds_per_thousand' ordinal='47' />
+            <column datatype='real' name='life_expectancy' ordinal='48' />
+            <column datatype='real' name='human_development_index' ordinal='49' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[covid-data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>iso_code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[iso_code]</local-name>
+            <parent-name>[covid-data.csv]</parent-name>
+            <remote-alias>iso_code</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>continent</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[continent]</local-name>
+            <parent-name>[covid-data.csv]</parent-name>
+            <remote-alias>continent</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[location]</local-name>
+            <parent-name>[covid-data.csv]</parent-name>
+            <remote-alias>location</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[covid-data.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_cases</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_cases]</local-name>
+            <parent-name>[covid-data.csv]</parent-name>
+            <remote-alias>total_cases</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>new_cases</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[new_cases]</local-name>
+            <parent-name>[covid-data.csv]</parent-name>
+            <remote-alias>new_cases</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>new_cases_smoothed</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[new_cases_smoothed]</local-name>
+            <parent-name>[covid-data.csv]</parent-name>
+            <remote-alias>new_cases_smoothed</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_deaths</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_deaths]</local-name>
+            <parent-name>[covid-data.csv]</parent-name>
+            <remote-alias>total_deaths</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>new_deaths</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[new_deaths]</local-name>
+            <parent-name>[covid-data.csv]</parent-name>
+            <remote-alias>new_deaths</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>new_deaths_smoothed</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[new_deaths_smoothed]</local-name>
+            <parent-name>[covid-data.csv]</parent-name>
+            <remote-alias>new_deaths_smoothed</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_cases_per_million</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_cases_per_million]</local-name>
+            <parent-name>[covid-data.csv]</parent-name>
+            <remote-alias>total_cases_per_million</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>new_cases_per_million</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[new_cases_per_million]</local-name>
+            <parent-name>[covid-data.csv]</parent-name>
+            <remote-alias>new_cases_per_million</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>new_cases_smoothed_per_million</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[new_cases_smoothed_per_million]</local-name>
+            <parent-name>[covid-data.csv]</parent-name>
+            <remote-alias>new_cases_smoothed_per_million</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_deaths_per_million</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_deaths_per_million]</local-name>
+            <parent-name>[covid-data.csv]</parent-name>
+            <remote-alias>total_deaths_per_million</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>new_deaths_per_million</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[new_deaths_per_million]</local-name>
+            <parent-name>[covid-data.csv]</parent-name>
+            <remote-alias>new_deaths_per_million</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>new_deaths_smoothed_per_million</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[new_deaths_smoothed_per_million]</local-name>
+            <parent-name>[covid-data.csv]</parent-name>
+            <remote-alias>new_deaths_smoothed_per_million</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reproduction_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[reproduction_rate]</local-name>
+            <parent-name>[covid-data.csv]</parent-name>
+            <remote-alias>reproduction_rate</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>icu_patients</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[icu_patients]</local-name>
+            <parent-name>[covid-data.csv]</parent-name>
+            <remote-alias>icu_patients</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>icu_patients_per_million</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[icu_patients_per_million]</local-name>
+            <parent-name>[covid-data.csv]</parent-name>
+            <remote-alias>icu_patients_per_million</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hosp_patients</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[hosp_patients]</local-name>
+            <parent-name>[covid-data.csv]</parent-name>
+            <remote-alias>hosp_patients</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hosp_patients_per_million</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[hosp_patients_per_million]</local-name>
+            <parent-name>[covid-data.csv]</parent-name>
+            <remote-alias>hosp_patients_per_million</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>weekly_icu_admissions</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[weekly_icu_admissions]</local-name>
+            <parent-name>[covid-data.csv]</parent-name>
+            <remote-alias>weekly_icu_admissions</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>weekly_icu_admissions_per_million</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[weekly_icu_admissions_per_million]</local-name>
+            <parent-name>[covid-data.csv]</parent-name>
+            <remote-alias>weekly_icu_admissions_per_million</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>weekly_hosp_admissions</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[weekly_hosp_admissions]</local-name>
+            <parent-name>[covid-data.csv]</parent-name>
+            <remote-alias>weekly_hosp_admissions</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>weekly_hosp_admissions_per_million</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[weekly_hosp_admissions_per_million]</local-name>
+            <parent-name>[covid-data.csv]</parent-name>
+            <remote-alias>weekly_hosp_admissions_per_million</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>new_tests</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[new_tests]</local-name>
+            <parent-name>[covid-data.csv]</parent-name>
+            <remote-alias>new_tests</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_tests</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[total_tests]</local-name>
+            <parent-name>[covid-data.csv]</parent-name>
+            <remote-alias>total_tests</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_tests_per_thousand</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[total_tests_per_thousand]</local-name>
+            <parent-name>[covid-data.csv]</parent-name>
+            <remote-alias>total_tests_per_thousand</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>new_tests_per_thousand</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[new_tests_per_thousand]</local-name>
+            <parent-name>[covid-data.csv]</parent-name>
+            <remote-alias>new_tests_per_thousand</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>new_tests_smoothed</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[new_tests_smoothed]</local-name>
+            <parent-name>[covid-data.csv]</parent-name>
+            <remote-alias>new_tests_smoothed</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>new_tests_smoothed_per_thousand</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[new_tests_smoothed_per_thousand]</local-name>
+            <parent-name>[covid-data.csv]</parent-name>
+            <remote-alias>new_tests_smoothed_per_thousand</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>positive_rate</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[positive_rate]</local-name>
+            <parent-name>[covid-data.csv]</parent-name>
+            <remote-alias>positive_rate</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tests_per_case</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tests_per_case]</local-name>
+            <parent-name>[covid-data.csv]</parent-name>
+            <remote-alias>tests_per_case</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tests_units</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tests_units]</local-name>
+            <parent-name>[covid-data.csv]</parent-name>
+            <remote-alias>tests_units</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stringency_index</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[stringency_index]</local-name>
+            <parent-name>[covid-data.csv]</parent-name>
+            <remote-alias>stringency_index</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>population</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[population]</local-name>
+            <parent-name>[covid-data.csv]</parent-name>
+            <remote-alias>population</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>population_density</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[population_density]</local-name>
+            <parent-name>[covid-data.csv]</parent-name>
+            <remote-alias>population_density</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>median_age</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[median_age]</local-name>
+            <parent-name>[covid-data.csv]</parent-name>
+            <remote-alias>median_age</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>aged_65_older</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[aged_65_older]</local-name>
+            <parent-name>[covid-data.csv]</parent-name>
+            <remote-alias>aged_65_older</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>aged_70_older</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[aged_70_older]</local-name>
+            <parent-name>[covid-data.csv]</parent-name>
+            <remote-alias>aged_70_older</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gdp_per_capita</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[gdp_per_capita]</local-name>
+            <parent-name>[covid-data.csv]</parent-name>
+            <remote-alias>gdp_per_capita</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>extreme_poverty</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[extreme_poverty]</local-name>
+            <parent-name>[covid-data.csv]</parent-name>
+            <remote-alias>extreme_poverty</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cardiovasc_death_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[cardiovasc_death_rate]</local-name>
+            <parent-name>[covid-data.csv]</parent-name>
+            <remote-alias>cardiovasc_death_rate</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>diabetes_prevalence</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[diabetes_prevalence]</local-name>
+            <parent-name>[covid-data.csv]</parent-name>
+            <remote-alias>diabetes_prevalence</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>female_smokers</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[female_smokers]</local-name>
+            <parent-name>[covid-data.csv]</parent-name>
+            <remote-alias>female_smokers</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>male_smokers</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[male_smokers]</local-name>
+            <parent-name>[covid-data.csv]</parent-name>
+            <remote-alias>male_smokers</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>handwashing_facilities</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[handwashing_facilities]</local-name>
+            <parent-name>[covid-data.csv]</parent-name>
+            <remote-alias>handwashing_facilities</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hospital_beds_per_thousand</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[hospital_beds_per_thousand]</local-name>
+            <parent-name>[covid-data.csv]</parent-name>
+            <remote-alias>hospital_beds_per_thousand</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>life_expectancy</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[life_expectancy]</local-name>
+            <parent-name>[covid-data.csv]</parent-name>
+            <remote-alias>life_expectancy</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>human_development_index</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[human_development_index]</local-name>
+            <parent-name>[covid-data.csv]</parent-name>
+            <remote-alias>human_development_index</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='covid-data.csv' datatype='table' name='[__tableau_internal_object_id__].[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]' role='measure' type='quantitative' />
+      <column caption='Aged 65 Older' datatype='real' name='[aged_65_older]' role='measure' type='quantitative' />
+      <column caption='Aged 70 Older' datatype='real' name='[aged_70_older]' role='measure' type='quantitative' />
+      <column caption='Cardiovasc Death Rate' datatype='real' name='[cardiovasc_death_rate]' role='measure' type='quantitative' />
+      <column caption='Continent' datatype='string' name='[continent]' role='dimension' type='nominal' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Diabetes Prevalence' datatype='real' name='[diabetes_prevalence]' role='measure' type='quantitative' />
+      <column caption='Extreme Poverty' datatype='real' name='[extreme_poverty]' role='measure' type='quantitative' />
+      <column caption='Female Smokers' datatype='real' name='[female_smokers]' role='measure' type='quantitative' />
+      <column caption='Gdp Per Capita' datatype='real' name='[gdp_per_capita]' role='measure' type='quantitative' />
+      <column caption='Handwashing Facilities' datatype='real' name='[handwashing_facilities]' role='measure' type='quantitative' />
+      <column caption='Hosp Patients' datatype='string' name='[hosp_patients]' role='dimension' type='nominal' />
+      <column caption='Hosp Patients Per Million' datatype='string' name='[hosp_patients_per_million]' role='dimension' type='nominal' />
+      <column caption='Hospital Beds Per Thousand' datatype='real' name='[hospital_beds_per_thousand]' role='measure' type='quantitative' />
+      <column caption='Human Development Index' datatype='real' name='[human_development_index]' role='measure' type='quantitative' />
+      <column caption='Icu Patients' datatype='string' name='[icu_patients]' role='dimension' type='nominal' />
+      <column caption='Icu Patients Per Million' datatype='string' name='[icu_patients_per_million]' role='dimension' type='nominal' />
+      <column aggregate-role-from='[location]' caption='Iso Code' datatype='string' name='[iso_code]' role='dimension' type='nominal' />
+      <column caption='Life Expectancy' datatype='real' name='[life_expectancy]' role='measure' type='quantitative' />
+      <column caption='Location' datatype='string' name='[location]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+      <column caption='Male Smokers' datatype='real' name='[male_smokers]' role='measure' type='quantitative' />
+      <column caption='Median Age' datatype='real' name='[median_age]' role='measure' type='quantitative' />
+      <column caption='New Cases' datatype='real' name='[new_cases]' role='measure' type='quantitative' />
+      <column caption='New Cases Per Million' datatype='real' name='[new_cases_per_million]' role='measure' type='quantitative' />
+      <column caption='New Cases Smoothed' datatype='real' name='[new_cases_smoothed]' role='measure' type='quantitative' />
+      <column caption='New Cases Smoothed Per Million' datatype='real' name='[new_cases_smoothed_per_million]' role='measure' type='quantitative' />
+      <column caption='New Deaths' datatype='real' name='[new_deaths]' role='measure' type='quantitative' />
+      <column caption='New Deaths Per Million' datatype='real' name='[new_deaths_per_million]' role='measure' type='quantitative' />
+      <column caption='New Deaths Smoothed' datatype='real' name='[new_deaths_smoothed]' role='measure' type='quantitative' />
+      <column caption='New Deaths Smoothed Per Million' datatype='real' name='[new_deaths_smoothed_per_million]' role='measure' type='quantitative' />
+      <column caption='New Tests' datatype='string' name='[new_tests]' role='dimension' type='nominal' />
+      <column caption='New Tests Per Thousand' datatype='string' name='[new_tests_per_thousand]' role='dimension' type='nominal' />
+      <column caption='New Tests Smoothed' datatype='string' name='[new_tests_smoothed]' role='dimension' type='nominal' />
+      <column caption='New Tests Smoothed Per Thousand' datatype='string' name='[new_tests_smoothed_per_thousand]' role='dimension' type='nominal' />
+      <column caption='Population' datatype='real' name='[population]' role='measure' type='quantitative' />
+      <column caption='Population Density' datatype='real' name='[population_density]' role='measure' type='quantitative' />
+      <column caption='Positive Rate' datatype='string' name='[positive_rate]' role='dimension' type='nominal' />
+      <column caption='Reproduction Rate' datatype='real' name='[reproduction_rate]' role='measure' type='quantitative' />
+      <column caption='Stringency Index' datatype='real' name='[stringency_index]' role='measure' type='quantitative' />
+      <column caption='Tests Per Case' datatype='string' name='[tests_per_case]' role='dimension' type='nominal' />
+      <column caption='Tests Units' datatype='string' name='[tests_units]' role='dimension' type='nominal' />
+      <column caption='Total Cases' datatype='real' name='[total_cases]' role='measure' type='quantitative' />
+      <column caption='Total Cases Per Million' datatype='real' name='[total_cases_per_million]' role='measure' type='quantitative' />
+      <column caption='Total Deaths' datatype='real' name='[total_deaths]' role='measure' type='quantitative' />
+      <column caption='Total Deaths Per Million' datatype='real' name='[total_deaths_per_million]' role='measure' type='quantitative' />
+      <column caption='Total Tests' datatype='string' name='[total_tests]' role='dimension' type='nominal' />
+      <column caption='Total Tests Per Thousand' datatype='string' name='[total_tests_per_thousand]' role='dimension' type='nominal' />
+      <column caption='Weekly Hosp Admissions' datatype='string' name='[weekly_hosp_admissions]' role='dimension' type='nominal' />
+      <column caption='Weekly Hosp Admissions Per Million' datatype='string' name='[weekly_hosp_admissions_per_million]' role='dimension' type='nominal' />
+      <column caption='Weekly Icu Admissions' datatype='string' name='[weekly_icu_admissions]' role='dimension' type='nominal' />
+      <column caption='Weekly Icu Admissions Per Million' datatype='string' name='[weekly_icu_admissions_per_million]' role='dimension' type='nominal' />
+      <column-instance column='[female_smokers]' derivation='Sum' name='[sum:female_smokers:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[male_smokers]' derivation='Sum' name='[sum:male_smokers:qk]' pivot='key' type='quantitative' />
+      <drill-paths>
+        <drill-path name='Iso Code, Location'>
+          <field>[iso_code]</field>
+          <field>[location]</field>
+        </drill-path>
+      </drill-paths>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/DELL/Python for data science class/Sparks Foundation Intern Tasks/Tasks-8-Exploratory Data Analysis - Covid 19/covid-data.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='12/14/2020 11:09:22 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='covid-data' increment-value='%null%' refresh-type='create' rows-inserted='62392' timestamp-start='2020-12-14 11:09:22.835' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>iso_code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[iso_code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>iso_code</remote-alias>
+              <ordinal>0</ordinal>
+              <family>covid-data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>225</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>continent</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[continent]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>continent</remote-alias>
+              <ordinal>1</ordinal>
+              <family>covid-data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>location</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[location]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>location</remote-alias>
+              <ordinal>2</ordinal>
+              <family>covid-data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>225</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>date</remote-alias>
+              <ordinal>3</ordinal>
+              <family>covid-data.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>627</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_cases</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[total_cases]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_cases</remote-alias>
+              <ordinal>4</ordinal>
+              <family>covid-data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10354</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>new_cases</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[new_cases]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>new_cases</remote-alias>
+              <ordinal>5</ordinal>
+              <family>covid-data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3077</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>new_cases_smoothed</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[new_cases_smoothed]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>new_cases_smoothed</remote-alias>
+              <ordinal>6</ordinal>
+              <family>covid-data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5536</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_deaths</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[total_deaths]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_deaths</remote-alias>
+              <ordinal>7</ordinal>
+              <family>covid-data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3447</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>new_deaths</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[new_deaths]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>new_deaths</remote-alias>
+              <ordinal>8</ordinal>
+              <family>covid-data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>828</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>new_deaths_smoothed</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[new_deaths_smoothed]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>new_deaths_smoothed</remote-alias>
+              <ordinal>9</ordinal>
+              <family>covid-data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1482</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_cases_per_million</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[total_cases_per_million]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_cases_per_million</remote-alias>
+              <ordinal>10</ordinal>
+              <family>covid-data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>20663</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>new_cases_per_million</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[new_cases_per_million]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>new_cases_per_million</remote-alias>
+              <ordinal>11</ordinal>
+              <family>covid-data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>14176</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>new_cases_smoothed_per_million</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[new_cases_smoothed_per_million]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>new_cases_smoothed_per_million</remote-alias>
+              <ordinal>12</ordinal>
+              <family>covid-data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12364</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_deaths_per_million</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[total_deaths_per_million]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_deaths_per_million</remote-alias>
+              <ordinal>13</ordinal>
+              <family>covid-data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10143</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>new_deaths_per_million</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[new_deaths_per_million]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>new_deaths_per_million</remote-alias>
+              <ordinal>14</ordinal>
+              <family>covid-data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3780</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>new_deaths_smoothed_per_million</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[new_deaths_smoothed_per_million]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>new_deaths_smoothed_per_million</remote-alias>
+              <ordinal>15</ordinal>
+              <family>covid-data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3186</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>reproduction_rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[reproduction_rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>reproduction_rate</remote-alias>
+              <ordinal>16</ordinal>
+              <family>covid-data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>474</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>icu_patients</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[icu_patients]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>icu_patients</remote-alias>
+              <ordinal>17</ordinal>
+              <family>covid-data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1013</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>icu_patients_per_million</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[icu_patients_per_million]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>icu_patients_per_million</remote-alias>
+              <ordinal>18</ordinal>
+              <family>covid-data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2428</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>hosp_patients</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[hosp_patients]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>hosp_patients</remote-alias>
+              <ordinal>19</ordinal>
+              <family>covid-data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2317</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>hosp_patients_per_million</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[hosp_patients_per_million]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>hosp_patients_per_million</remote-alias>
+              <ordinal>20</ordinal>
+              <family>covid-data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4384</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>weekly_icu_admissions</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[weekly_icu_admissions]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>weekly_icu_admissions</remote-alias>
+              <ordinal>21</ordinal>
+              <family>covid-data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>407</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>weekly_icu_admissions_per_million</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[weekly_icu_admissions_per_million]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>weekly_icu_admissions_per_million</remote-alias>
+              <ordinal>22</ordinal>
+              <family>covid-data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>407</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>weekly_hosp_admissions</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[weekly_hosp_admissions]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>weekly_hosp_admissions</remote-alias>
+              <ordinal>23</ordinal>
+              <family>covid-data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>575</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>weekly_hosp_admissions_per_million</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[weekly_hosp_admissions_per_million]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>weekly_hosp_admissions_per_million</remote-alias>
+              <ordinal>24</ordinal>
+              <family>covid-data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>575</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>new_tests</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[new_tests]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>new_tests</remote-alias>
+              <ordinal>25</ordinal>
+              <family>covid-data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9824</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_tests</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[total_tests]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_tests</remote-alias>
+              <ordinal>26</ordinal>
+              <family>covid-data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>35089</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_tests_per_thousand</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[total_tests_per_thousand]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_tests_per_thousand</remote-alias>
+              <ordinal>27</ordinal>
+              <family>covid-data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>15213</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>new_tests_per_thousand</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[new_tests_per_thousand]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>new_tests_per_thousand</remote-alias>
+              <ordinal>28</ordinal>
+              <family>covid-data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3446</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>new_tests_smoothed</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[new_tests_smoothed]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>new_tests_smoothed</remote-alias>
+              <ordinal>29</ordinal>
+              <family>covid-data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>15329</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>new_tests_smoothed_per_thousand</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[new_tests_smoothed_per_thousand]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>new_tests_smoothed_per_thousand</remote-alias>
+              <ordinal>30</ordinal>
+              <family>covid-data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3656</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>positive_rate</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[positive_rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>positive_rate</remote-alias>
+              <ordinal>31</ordinal>
+              <family>covid-data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>798</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tests_per_case</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[tests_per_case]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tests_per_case</remote-alias>
+              <ordinal>32</ordinal>
+              <family>covid-data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3293</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tests_units</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[tests_units]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tests_units</remote-alias>
+              <ordinal>33</ordinal>
+              <family>covid-data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stringency_index</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[stringency_index]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>stringency_index</remote-alias>
+              <ordinal>34</ordinal>
+              <family>covid-data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>274</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>population</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[population]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>population</remote-alias>
+              <ordinal>35</ordinal>
+              <family>covid-data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>225</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>population_density</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[population_density]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>population_density</remote-alias>
+              <ordinal>36</ordinal>
+              <family>covid-data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>221</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>median_age</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[median_age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>median_age</remote-alias>
+              <ordinal>37</ordinal>
+              <family>covid-data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>144</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>aged_65_older</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[aged_65_older]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>aged_65_older</remote-alias>
+              <ordinal>38</ordinal>
+              <family>covid-data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>213</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>aged_70_older</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[aged_70_older]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>aged_70_older</remote-alias>
+              <ordinal>39</ordinal>
+              <family>covid-data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>211</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gdp_per_capita</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[gdp_per_capita]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gdp_per_capita</remote-alias>
+              <ordinal>40</ordinal>
+              <family>covid-data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>217</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>extreme_poverty</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[extreme_poverty]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>extreme_poverty</remote-alias>
+              <ordinal>41</ordinal>
+              <family>covid-data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>89</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cardiovasc_death_rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[cardiovasc_death_rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>cardiovasc_death_rate</remote-alias>
+              <ordinal>42</ordinal>
+              <family>covid-data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>212</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>diabetes_prevalence</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[diabetes_prevalence]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>diabetes_prevalence</remote-alias>
+              <ordinal>43</ordinal>
+              <family>covid-data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>150</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>female_smokers</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[female_smokers]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>female_smokers</remote-alias>
+              <ordinal>44</ordinal>
+              <family>covid-data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>115</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>male_smokers</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[male_smokers]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>male_smokers</remote-alias>
+              <ordinal>45</ordinal>
+              <family>covid-data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>138</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>handwashing_facilities</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[handwashing_facilities]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>handwashing_facilities</remote-alias>
+              <ordinal>46</ordinal>
+              <family>covid-data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>109</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>hospital_beds_per_thousand</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[hospital_beds_per_thousand]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>hospital_beds_per_thousand</remote-alias>
+              <ordinal>47</ordinal>
+              <family>covid-data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>107</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>life_expectancy</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[life_expectancy]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>life_expectancy</remote-alias>
+              <ordinal>48</ordinal>
+              <family>covid-data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>212</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>human_development_index</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[human_development_index]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>human_development_index</remote-alias>
+              <ordinal>49</ordinal>
+              <family>covid-data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>185</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.119wpr11oho2rk1e9qbfl0rlresp].[sum:female_smokers:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.119wpr11oho2rk1e9qbfl0rlresp]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.119wpr11oho2rk1e9qbfl0rlresp].[sum:male_smokers:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='covid-data.csv' id='covid-data.csv_2E9A4BD8FB784B5BA00EC15317AAD8BE'>
+            <properties context=''>
+              <relation connection='textscan.0mzu8b71ymlwtj1g3bgip1so79t6' name='covid-data.csv' table='[covid-data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='iso_code' ordinal='0' />
+                  <column datatype='string' name='continent' ordinal='1' />
+                  <column datatype='string' name='location' ordinal='2' />
+                  <column datatype='date' name='date' ordinal='3' />
+                  <column datatype='real' name='total_cases' ordinal='4' />
+                  <column datatype='real' name='new_cases' ordinal='5' />
+                  <column datatype='real' name='new_cases_smoothed' ordinal='6' />
+                  <column datatype='real' name='total_deaths' ordinal='7' />
+                  <column datatype='real' name='new_deaths' ordinal='8' />
+                  <column datatype='real' name='new_deaths_smoothed' ordinal='9' />
+                  <column datatype='real' name='total_cases_per_million' ordinal='10' />
+                  <column datatype='real' name='new_cases_per_million' ordinal='11' />
+                  <column datatype='real' name='new_cases_smoothed_per_million' ordinal='12' />
+                  <column datatype='real' name='total_deaths_per_million' ordinal='13' />
+                  <column datatype='real' name='new_deaths_per_million' ordinal='14' />
+                  <column datatype='real' name='new_deaths_smoothed_per_million' ordinal='15' />
+                  <column datatype='real' name='reproduction_rate' ordinal='16' />
+                  <column datatype='string' name='icu_patients' ordinal='17' />
+                  <column datatype='string' name='icu_patients_per_million' ordinal='18' />
+                  <column datatype='string' name='hosp_patients' ordinal='19' />
+                  <column datatype='string' name='hosp_patients_per_million' ordinal='20' />
+                  <column datatype='string' name='weekly_icu_admissions' ordinal='21' />
+                  <column datatype='string' name='weekly_icu_admissions_per_million' ordinal='22' />
+                  <column datatype='string' name='weekly_hosp_admissions' ordinal='23' />
+                  <column datatype='string' name='weekly_hosp_admissions_per_million' ordinal='24' />
+                  <column datatype='string' name='new_tests' ordinal='25' />
+                  <column datatype='string' name='total_tests' ordinal='26' />
+                  <column datatype='string' name='total_tests_per_thousand' ordinal='27' />
+                  <column datatype='string' name='new_tests_per_thousand' ordinal='28' />
+                  <column datatype='string' name='new_tests_smoothed' ordinal='29' />
+                  <column datatype='string' name='new_tests_smoothed_per_thousand' ordinal='30' />
+                  <column datatype='string' name='positive_rate' ordinal='31' />
+                  <column datatype='string' name='tests_per_case' ordinal='32' />
+                  <column datatype='string' name='tests_units' ordinal='33' />
+                  <column datatype='real' name='stringency_index' ordinal='34' />
+                  <column datatype='real' name='population' ordinal='35' />
+                  <column datatype='real' name='population_density' ordinal='36' />
+                  <column datatype='real' name='median_age' ordinal='37' />
+                  <column datatype='real' name='aged_65_older' ordinal='38' />
+                  <column datatype='real' name='aged_70_older' ordinal='39' />
+                  <column datatype='real' name='gdp_per_capita' ordinal='40' />
+                  <column datatype='real' name='extreme_poverty' ordinal='41' />
+                  <column datatype='real' name='cardiovasc_death_rate' ordinal='42' />
+                  <column datatype='real' name='diabetes_prevalence' ordinal='43' />
+                  <column datatype='real' name='female_smokers' ordinal='44' />
+                  <column datatype='real' name='male_smokers' ordinal='45' />
+                  <column datatype='real' name='handwashing_facilities' ordinal='46' />
+                  <column datatype='real' name='hospital_beds_per_thousand' ordinal='47' />
+                  <column datatype='real' name='life_expectancy' ordinal='48' />
+                  <column datatype='real' name='human_development_index' ordinal='49' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Age group per country'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='covid-data' name='federated.119wpr11oho2rk1e9qbfl0rlresp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.119wpr11oho2rk1e9qbfl0rlresp'>
+            <column caption='Aged 65 Older' datatype='real' name='[aged_65_older]' role='measure' type='quantitative' />
+            <column caption='Aged 70 Older' datatype='real' name='[aged_70_older]' role='measure' type='quantitative' />
+            <column caption='Location' datatype='string' name='[location]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+            <column caption='Median Age' datatype='real' name='[median_age]' role='measure' type='quantitative' />
+            <column-instance column='[location]' derivation='None' name='[none:location:nk]' pivot='key' type='nominal' />
+            <column-instance column='[aged_65_older]' derivation='Sum' name='[sum:aged_65_older:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[aged_70_older]' derivation='Sum' name='[sum:aged_70_older:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[median_age]' derivation='Sum' name='[sum:median_age:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.119wpr11oho2rk1e9qbfl0rlresp].[none:location:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.119wpr11oho2rk1e9qbfl0rlresp].[sum:median_age:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.119wpr11oho2rk1e9qbfl0rlresp].[sum:aged_65_older:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.119wpr11oho2rk1e9qbfl0rlresp].[sum:aged_70_older:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.119wpr11oho2rk1e9qbfl0rlresp].[sum:median_age:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([federated.119wpr11oho2rk1e9qbfl0rlresp].[sum:aged_65_older:qk] + ([federated.119wpr11oho2rk1e9qbfl0rlresp].[sum:aged_70_older:qk] + [federated.119wpr11oho2rk1e9qbfl0rlresp].[sum:median_age:qk]))</rows>
+        <cols>[federated.119wpr11oho2rk1e9qbfl0rlresp].[none:location:nk]</cols>
+      </table>
+      <simple-id uuid='{204219C1-B213-41E1-A0D1-832CE9374AE0}' />
+    </worksheet>
+    <worksheet name='Confirmed cases Vs Deaths Reported per country'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='covid-data' name='federated.119wpr11oho2rk1e9qbfl0rlresp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.119wpr11oho2rk1e9qbfl0rlresp'>
+            <column caption='Location' datatype='string' name='[location]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+            <column-instance column='[location]' derivation='None' name='[none:location:nk]' pivot='key' type='nominal' />
+            <column-instance column='[total_cases]' derivation='Sum' name='[sum:total_cases:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_deaths]' derivation='Sum' name='[sum:total_deaths:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Cases' datatype='real' name='[total_cases]' role='measure' type='quantitative' />
+            <column caption='Total Deaths' datatype='real' name='[total_deaths]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.119wpr11oho2rk1e9qbfl0rlresp].[none:location:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.119wpr11oho2rk1e9qbfl0rlresp].[sum:total_cases:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.119wpr11oho2rk1e9qbfl0rlresp].[sum:total_cases:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.119wpr11oho2rk1e9qbfl0rlresp].[sum:total_deaths:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([federated.119wpr11oho2rk1e9qbfl0rlresp].[sum:total_cases:qk] + [federated.119wpr11oho2rk1e9qbfl0rlresp].[sum:total_deaths:qk])</rows>
+        <cols>[federated.119wpr11oho2rk1e9qbfl0rlresp].[none:location:nk]</cols>
+      </table>
+      <simple-id uuid='{C749FA10-A9B5-4F52-9E1D-56DD928A7141}' />
+    </worksheet>
+    <worksheet name='Counts'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='covid-data' name='federated.119wpr11oho2rk1e9qbfl0rlresp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.119wpr11oho2rk1e9qbfl0rlresp'>
+            <column caption='Aged 65 Older' datatype='real' name='[aged_65_older]' role='measure' type='quantitative' />
+            <column caption='Aged 70 Older' datatype='real' name='[aged_70_older]' role='measure' type='quantitative' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[date]' derivation='Day' name='[dy:date:ok]' pivot='key' type='ordinal' />
+            <column caption='Female Smokers' datatype='real' name='[female_smokers]' role='measure' type='quantitative' />
+            <column caption='Male Smokers' datatype='real' name='[male_smokers]' role='measure' type='quantitative' />
+            <column caption='Median Age' datatype='real' name='[median_age]' role='measure' type='quantitative' />
+            <column-instance column='[date]' derivation='Month' name='[mn:date:ok]' pivot='key' type='ordinal' />
+            <column caption='New Cases' datatype='real' name='[new_cases]' role='measure' type='quantitative' />
+            <column caption='New Deaths' datatype='real' name='[new_deaths]' role='measure' type='quantitative' />
+            <column-instance column='[aged_65_older]' derivation='Sum' name='[sum:aged_65_older:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[aged_70_older]' derivation='Sum' name='[sum:aged_70_older:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[female_smokers]' derivation='Sum' name='[sum:female_smokers:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[male_smokers]' derivation='Sum' name='[sum:male_smokers:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[median_age]' derivation='Sum' name='[sum:median_age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[new_cases]' derivation='Sum' name='[sum:new_cases:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[new_deaths]' derivation='Sum' name='[sum:new_deaths:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_cases]' derivation='Sum' name='[sum:total_cases:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_deaths]' derivation='Sum' name='[sum:total_deaths:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Cases' datatype='real' name='[total_cases]' role='measure' type='quantitative' />
+            <column caption='Total Deaths' datatype='real' name='[total_deaths]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.119wpr11oho2rk1e9qbfl0rlresp].[dy:date:ok]'>
+            <groupfilter function='level-members' level='[dy:date:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.119wpr11oho2rk1e9qbfl0rlresp].[mn:date:ok]'>
+            <groupfilter function='level-members' level='[mn:date:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.119wpr11oho2rk1e9qbfl0rlresp].[dy:date:ok]</column>
+            <column>[federated.119wpr11oho2rk1e9qbfl0rlresp].[mn:date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.119wpr11oho2rk1e9qbfl0rlresp].[sum:total_cases:qk]' />
+              <text column='[federated.119wpr11oho2rk1e9qbfl0rlresp].[sum:total_deaths:qk]' />
+              <text column='[federated.119wpr11oho2rk1e9qbfl0rlresp].[sum:new_deaths:qk]' />
+              <text column='[federated.119wpr11oho2rk1e9qbfl0rlresp].[sum:new_cases:qk]' />
+              <text column='[federated.119wpr11oho2rk1e9qbfl0rlresp].[sum:male_smokers:qk]' />
+              <text column='[federated.119wpr11oho2rk1e9qbfl0rlresp].[sum:female_smokers:qk]' />
+              <text column='[federated.119wpr11oho2rk1e9qbfl0rlresp].[sum:aged_70_older:qk]' />
+              <text column='[federated.119wpr11oho2rk1e9qbfl0rlresp].[sum:aged_65_older:qk]' />
+              <text column='[federated.119wpr11oho2rk1e9qbfl0rlresp].[sum:median_age:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontalignment='0'>Total Cases:             &lt;</run>
+                <run fontalignment='0'>[federated.119wpr11oho2rk1e9qbfl0rlresp].[sum:total_cases:qk]</run>
+                <run fontalignment='0'>&gt;&#10;Total Deaths:           &lt;</run>
+                <run fontalignment='0'>[federated.119wpr11oho2rk1e9qbfl0rlresp].[sum:total_deaths:qk]</run>
+                <run fontalignment='0'>&gt;&#10;New Deaths:            &lt;</run>
+                <run fontalignment='0'>[federated.119wpr11oho2rk1e9qbfl0rlresp].[sum:new_deaths:qk]</run>
+                <run fontalignment='0'>&gt;&#10;New Cases:              &lt;</run>
+                <run fontalignment='0'>[federated.119wpr11oho2rk1e9qbfl0rlresp].[sum:new_cases:qk]</run>
+                <run fontalignment='0'>&gt;&#10;Male Smokers:        &lt;</run>
+                <run fontalignment='0'>[federated.119wpr11oho2rk1e9qbfl0rlresp].[sum:male_smokers:qk]</run>
+                <run fontalignment='0'>&gt;&#10;Female Smokers:   &lt;</run>
+                <run fontalignment='0'>[federated.119wpr11oho2rk1e9qbfl0rlresp].[sum:female_smokers:qk]</run>
+                <run fontalignment='0'>&gt;&#10;Aged-70 Older:       &lt;</run>
+                <run fontalignment='0'>[federated.119wpr11oho2rk1e9qbfl0rlresp].[sum:aged_70_older:qk]</run>
+                <run fontalignment='0'>&gt;&#10;Aged-65 Older:       &lt;</run>
+                <run fontalignment='0'>[federated.119wpr11oho2rk1e9qbfl0rlresp].[sum:aged_65_older:qk]</run>
+                <run fontalignment='0'>&gt;&#10;Aged Median:         &lt;</run>
+                <run fontalignment='0'>[federated.119wpr11oho2rk1e9qbfl0rlresp].[sum:median_age:qk]</run>
+                <run fontalignment='0'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{CFA59C13-92F9-4DA8-9547-9073A24A047A}' />
+    </worksheet>
+    <worksheet name='Facilities vs new cases'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='covid-data' name='federated.119wpr11oho2rk1e9qbfl0rlresp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.119wpr11oho2rk1e9qbfl0rlresp'>
+            <column caption='Handwashing Facilities' datatype='real' name='[handwashing_facilities]' role='measure' type='quantitative' />
+            <column caption='Hosp Patients' datatype='string' name='[hosp_patients]' role='dimension' type='nominal' />
+            <column caption='Location' datatype='string' name='[location]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+            <column caption='New Cases' datatype='real' name='[new_cases]' role='measure' type='quantitative' />
+            <column-instance column='[hosp_patients]' derivation='None' name='[none:hosp_patients:nk]' pivot='key' type='nominal' />
+            <column-instance column='[location]' derivation='None' name='[none:location:nk]' pivot='key' type='nominal' />
+            <column-instance column='[handwashing_facilities]' derivation='Sum' name='[sum:handwashing_facilities:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[new_cases]' derivation='Sum' name='[sum:new_cases:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.119wpr11oho2rk1e9qbfl0rlresp].[none:hosp_patients:nk]'>
+            <groupfilter function='level-members' level='[none:hosp_patients:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.119wpr11oho2rk1e9qbfl0rlresp].[none:location:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.119wpr11oho2rk1e9qbfl0rlresp].[sum:new_cases:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.119wpr11oho2rk1e9qbfl0rlresp].[none:hosp_patients:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.119wpr11oho2rk1e9qbfl0rlresp].[sum:handwashing_facilities:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.119wpr11oho2rk1e9qbfl0rlresp].[sum:new_cases:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([federated.119wpr11oho2rk1e9qbfl0rlresp].[sum:handwashing_facilities:qk] + [federated.119wpr11oho2rk1e9qbfl0rlresp].[sum:new_cases:qk])</rows>
+        <cols>[federated.119wpr11oho2rk1e9qbfl0rlresp].[none:location:nk]</cols>
+      </table>
+      <simple-id uuid='{B1391251-7576-46E4-9AFF-09B22D431EFE}' />
+    </worksheet>
+    <worksheet name='New Cases per day'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='covid-data' name='federated.119wpr11oho2rk1e9qbfl0rlresp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.119wpr11oho2rk1e9qbfl0rlresp'>
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[date]' derivation='Day' name='[dy:date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[date]' derivation='Month' name='[mn:date:ok]' pivot='key' type='ordinal' />
+            <column caption='New Cases' datatype='real' name='[new_cases]' role='measure' type='quantitative' />
+            <column caption='New Deaths' datatype='real' name='[new_deaths]' role='measure' type='quantitative' />
+            <column-instance column='[new_cases]' derivation='Sum' name='[sum:new_cases:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[new_deaths]' derivation='Sum' name='[sum:new_deaths:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <lod column='[federated.119wpr11oho2rk1e9qbfl0rlresp].[mn:date:ok]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.119wpr11oho2rk1e9qbfl0rlresp].[sum:new_cases:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <lod column='[federated.119wpr11oho2rk1e9qbfl0rlresp].[mn:date:ok]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.119wpr11oho2rk1e9qbfl0rlresp].[sum:new_deaths:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <lod column='[federated.119wpr11oho2rk1e9qbfl0rlresp].[mn:date:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.119wpr11oho2rk1e9qbfl0rlresp].[sum:new_cases:qk] + [federated.119wpr11oho2rk1e9qbfl0rlresp].[sum:new_deaths:qk])</rows>
+        <cols>([federated.119wpr11oho2rk1e9qbfl0rlresp].[mn:date:ok] / [federated.119wpr11oho2rk1e9qbfl0rlresp].[dy:date:ok])</cols>
+      </table>
+      <simple-id uuid='{C4B79290-E345-4157-A032-7DC7C43CFC6B}' />
+    </worksheet>
+    <worksheet name='Sheet 8'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='covid-data' name='federated.119wpr11oho2rk1e9qbfl0rlresp' />
+          </datasources>
+          <mapsources>
+            <mapsource name='' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.119wpr11oho2rk1e9qbfl0rlresp'>
+            <column aggregate-role-from='[location]' caption='Iso Code' datatype='string' name='[iso_code]' role='dimension' type='nominal' />
+            <column caption='Location' datatype='string' name='[location]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+            <column-instance column='[iso_code]' derivation='None' name='[none:iso_code:nk]' pivot='key' type='nominal' />
+            <column-instance column='[location]' derivation='None' name='[none:location:nk]' pivot='key' type='nominal' />
+            <column-instance column='[total_deaths]' derivation='Sum' name='[sum:total_deaths:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Deaths' datatype='real' name='[total_deaths]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.119wpr11oho2rk1e9qbfl0rlresp].[none:location:nk]' />
+              <size column='[federated.119wpr11oho2rk1e9qbfl0rlresp].[sum:total_deaths:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.119wpr11oho2rk1e9qbfl0rlresp].[none:iso_code:nk] * [federated.119wpr11oho2rk1e9qbfl0rlresp].[Latitude (generated)])</rows>
+        <cols>[federated.119wpr11oho2rk1e9qbfl0rlresp].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{B851E96B-8EBE-48B0-848C-243AFFE2ABD1}' />
+    </worksheet>
+    <worksheet name='Smokers'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='covid-data' name='federated.119wpr11oho2rk1e9qbfl0rlresp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.119wpr11oho2rk1e9qbfl0rlresp'>
+            <column caption='Female Smokers' datatype='real' name='[female_smokers]' role='measure' type='quantitative' />
+            <column caption='Location' datatype='string' name='[location]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+            <column caption='Male Smokers' datatype='real' name='[male_smokers]' role='measure' type='quantitative' />
+            <column-instance column='[location]' derivation='None' name='[none:location:nk]' pivot='key' type='nominal' />
+            <column-instance column='[female_smokers]' derivation='Sum' name='[sum:female_smokers:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[male_smokers]' derivation='Sum' name='[sum:male_smokers:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.119wpr11oho2rk1e9qbfl0rlresp].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.119wpr11oho2rk1e9qbfl0rlresp].[sum:female_smokers:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.119wpr11oho2rk1e9qbfl0rlresp].[sum:male_smokers:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.119wpr11oho2rk1e9qbfl0rlresp].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.119wpr11oho2rk1e9qbfl0rlresp].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.119wpr11oho2rk1e9qbfl0rlresp].[none:location:nk] * [federated.119wpr11oho2rk1e9qbfl0rlresp].[Multiple Values])</rows>
+        <cols>[federated.119wpr11oho2rk1e9qbfl0rlresp].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{7C3BB81A-68DB-4014-A79C-6B6A8736AF97}' />
+    </worksheet>
+    <worksheet name='Total Cases &amp; Deaths per Month'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='covid-data' name='federated.119wpr11oho2rk1e9qbfl0rlresp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.119wpr11oho2rk1e9qbfl0rlresp'>
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[date]' derivation='Day' name='[dy:date:qk]' pivot='key' type='quantitative' />
+            <column caption='Location' datatype='string' name='[location]' role='dimension' semantic-role='[Country].[Name]' type='nominal' />
+            <column-instance column='[date]' derivation='Month' name='[mn:date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[location]' derivation='None' name='[none:location:nk]' pivot='key' type='nominal' />
+            <column-instance column='[total_cases]' derivation='Sum' name='[sum:total_cases:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_deaths]' derivation='Sum' name='[sum:total_deaths:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Cases' datatype='real' name='[total_cases]' role='measure' type='quantitative' />
+            <column caption='Total Deaths' datatype='real' name='[total_deaths]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.119wpr11oho2rk1e9qbfl0rlresp].[mn:date:ok]'>
+            <groupfilter function='level-members' level='[mn:date:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.119wpr11oho2rk1e9qbfl0rlresp].[none:location:nk]'>
+            <groupfilter function='level-members' level='[none:location:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.119wpr11oho2rk1e9qbfl0rlresp].[mn:date:ok]</column>
+            <column>[federated.119wpr11oho2rk1e9qbfl0rlresp].[none:location:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.119wpr11oho2rk1e9qbfl0rlresp].[sum:total_cases:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.119wpr11oho2rk1e9qbfl0rlresp].[sum:total_deaths:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+        </panes>
+        <rows>([federated.119wpr11oho2rk1e9qbfl0rlresp].[sum:total_cases:qk] + [federated.119wpr11oho2rk1e9qbfl0rlresp].[sum:total_deaths:qk])</rows>
+        <cols>(([federated.119wpr11oho2rk1e9qbfl0rlresp].[mn:date:ok] / [federated.119wpr11oho2rk1e9qbfl0rlresp].[none:location:nk]) * [federated.119wpr11oho2rk1e9qbfl0rlresp].[dy:date:qk])</cols>
+      </table>
+      <simple-id uuid='{2982EC3E-D557-4A41-A1E8-192809682C2F}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='51'>
+    <window class='worksheet' name='Confirmed cases Vs Deaths Reported per country'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-height' />
+      </viewpoint>
+      <simple-id uuid='{B8B0759A-E7A7-4B03-8FA0-7CA507BDB785}' />
+    </window>
+    <window class='worksheet' name='Total Cases &amp; Deaths per Month'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='checkdropdown' param='[federated.119wpr11oho2rk1e9qbfl0rlresp].[none:location:nk]' type='filter' />
+            <card param='[federated.119wpr11oho2rk1e9qbfl0rlresp].[mn:date:ok]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A70FB299-10BB-474E-9237-01DF5506188F}' />
+    </window>
+    <window class='worksheet' name='Age group per country'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5E14082C-2053-4D88-A3A7-8E8A14DABE67}' />
+    </window>
+    <window class='worksheet' name='New Cases per day'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C8308089-008A-4415-82B9-A4C888841AFB}' />
+    </window>
+    <window class='worksheet' name='Smokers'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.119wpr11oho2rk1e9qbfl0rlresp].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{379274CA-09A6-4D9E-8450-A291D1F73EA3}' />
+    </window>
+    <window class='worksheet' name='Facilities vs new cases'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0A9E9281-C252-4312-81B9-5B3511C75233}' />
+    </window>
+    <window class='worksheet' name='Counts'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='checkdropdown' param='[federated.119wpr11oho2rk1e9qbfl0rlresp].[dy:date:ok]' type='filter' />
+            <card param='[federated.119wpr11oho2rk1e9qbfl0rlresp].[mn:date:ok]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{293816CD-0478-44FC-9CA8-1C22ECE54273}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 8'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.119wpr11oho2rk1e9qbfl0rlresp].[sum:total_deaths:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8E408041-4437-4F05-9793-E9E580AD2298}' />
+    </window>
+  </windows>
+</workbook>
